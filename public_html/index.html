@@ -9,24 +9,106 @@
 <body>  <!--Cuerpo de la pagina (Parte visible) -->
 
     <header id="Main-Header">  <!-- Encabezado de la pagina (Reservado para la barra de navegacion principal)-->
-        <a href="./index.html">
-            <img src="./images/logoMM.png" alt="ImagenLogo">
-        </a>
-        <h1>MindMeetings</h1>
-        <nav>
-            <ul>
-                <div class="div-header-opciones">
-                    <li> <a href="./index.html">Inicio</a></li>
-                </div>
-                <div class="div-header-opciones">
-                    <li> <a href="./salas.html">Salas</a></li>
-                </div>
-                <div class="div-header-opciones">
-                    <li> <a href="./contacto.html">Contacto</a></li>
-                </div>
-            </ul>
-        </nav>
+        <div class="BarraNavDiv">   <!-- Div para al barra principal de navegacion -->
+            <a href="./index.html"> <!-- Link para la imagen del logo -->
+                <img src="./images/logoMM.png" alt="ImagenLogo">
+            </a>
+            <h1>MindMeetings</h1>   <!-- Titulo de la barra de navegacion -->
+            <nav>
+                <ul>
+                    <div class="opcionesDiv">   <!-- div para las opciones individuales-->
+                        <li> <a href="./index.html">Inicio</a></li> <!-- Opcion Inicio -->
+                    </div>
+                    <div class="opcionesDiv">   <!-- div para las opciones individuales-->
+                        <li> <a href="./salas.html">Salas</a></li>  <!-- Opcion Salas -->
+                    </div>
+                    <div class="opcionesDiv">   <!-- div para las opciones individuales-->
+                        <li> <a href="./contacto.html">Contacto</a></li> <!-- Opcion Contacto -->
+                    </div>
+                </ul>
+            </nav>
+        </div>
     </header>   <!-- FIN Encabezado de la pagina -->
+
+    <main>  <!-- Cuerpo de la pagina (añadir ultimas conferencias y porque nosotros)-->
+
+        <div class="ReservaTuSalaDiv"> <!-- div de reserva una sala -->
+            <img src="./images/sala1.png" alt="ImagenSala1">    <!--   Imagen sala 1 -->
+            <h2>Reservar salas es ahora más fácil que nunca</h2>    <!-- Frase en la imagen de la sala 1-->
+            <p></p>  <!-- Salto de linea -->
+            <div class="SeccionReservarDiv">  
+                <a href="./salas.html">Reservar una sala</a> <!-- link del "boton" de reservas-->
+            </div>
+        </div>
+
+        <div class="UltConferenciasDiv"> <!-- div de ultimas conferencias -->
+            <article>  <!-- Tipo articulo -->
+                <h3>Ultimas conferencias</h3>  <!-- titulo del articulo -->
+                <img src="./images/sala2.png" alt="ImagenSala2">  <!-- Imagen de la sala2-->
+                <h4>Curso en seguridad informática</h4>  <!-- Titulo de la conferencia -->
+                <div class="ContenidoConferenciaDiv">   <!-- Contenido de la conferencia -->
+                    Ponentes de la empresa VMware darán un seminario orientado a como proteger bases de datos...
+                </div>
+                <p></p>
+                <div class="MasInfoDiv">   <!--  Espacio a mas informacion -->
+                    <a href="https://www.vmware.com/es.html">+Info</a> 
+                </div>
+            </article>
+        </div>
+
+        <div class="ValoresDiv">    <!-- Div para los valores de la empresa -->
+            <article>   <!-- Tipo articulo -->
+                <h5>¿Por qué usar MindMeetings?</h5>    <!-- Titulo global -->
+                <div class="CompromisoDiv">  <!-- Div para el valor Compromiso -->
+                    <img src="./images/compromiso.png" alt="CompromisoImg">     <!-- Imagen del icono compromiso -->
+                    <div class="CompromisoTexto">   <!-- Div para el texto -->
+                        Nos comprometemos a ofrecer el mejor servicio.  <!-- texto de compromiso -->
+                    </div>
+                </div>
+                <div class="RentabilidadDiv">   <!-- Div para el valor Rentabilidad -->
+                    <img src="./images/Rentabilidad.png" alt="RentabilidadImg"> <!-- Imagen del icono Rentabilidad -->
+                    <div class="RentabilidadTexto"> <!-- Div para el texto -->
+                        Siempre encontraras la mejor sala al mejor precio.  <!-- texto de Rentabilidad -->
+                    </div>
+                </div>
+                <div class="DisponibilidadDiv"> <!-- Div para el valor Disponibilidad -->
+                    <img src="./images/Disponibilidad.png" alt="DisponibilidadImg"> <!-- Imagen del icono Disponibilidad -->
+                    <div class="DisponibilidadTexto">   <!-- Div para el texto -->
+                        Cancelación gratuita hasta 24 horas antes.  <!-- texto de Disponibilidad -->
+                    </div>
+                    <p></p>
+                </div>
+            </article>
+        </div>
+    </main> <!-- FIN Cuerpo de la pagina -->
+
+    <footer> <!-- Barra inferior (Para contacto y redes sociales) -->
+        <div class="ContactoDiv">
+            Telefono: 626 47 18 22 <p></p>
+            Correo electrónico: contactoayuda@MindMeetings.com <p></p>
+            Direccion: Av. Universidad de Cádiz, 10, 11519 Puerto Real, Cádiz <p></p>
+        </div>
+
+        <div class="CopyDiv">
+            &copy; MindMeetings 2023 <p></p>
+        </div>
+
+        <div class="RedesSocialesDiv">
+            <div class="RedesSocialesTexto">
+                Sígenos en nuestras redes sociales
+            </div>
+            <a href="https://www.instagram.com/">
+                <img src="./images/insta.png" alt="RedesSocialesInstaImg">
+            </a>
+            <a href="https://facebook.com/">
+                <img src="./images/face.png" alt="RedesSocialesFaceImg">
+            </a>
+            <a href="https://twitter.com/">
+                <img src="./images/twit.png" alt="RedesSocialesTwitImg">
+            </a>
+        </div>
+        
+    </footer>
 
 </body> <!-- FIN Cuerpo de la pagina (Parte visible) -->
 </html>
