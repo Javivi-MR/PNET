@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva tu sala ¡YA!</title>
+</head>
+<body>
+
+    <header id="Main-Header">  <!-- Encabezado de la pagina (Reservado para la barra de navegacion principal)-->
+        <div class="BarraNavDiv">   <!-- Div para al barra principal de navegacion -->
+            <a href="./index.html"> <!-- Link para la imagen del logo -->
+                <img src="./images/logoMM.png" alt="ImagenLogo">
+            </a>
+            <h1>MindMeetings</h1>   <!-- Titulo de la barra de navegacion -->
+            <nav>
+                <ul>
+                    <li> <a href="./index.html">Inicio</a></li> <!-- Opcion Inicio -->
+                    <li> <a href="./salas.html">Salas</a></li>  <!-- Opcion Salas -->
+                    <li> <a href="./contacto.html">Contacto</a></li> <!-- Opcion Contacto -->
+                </ul>
+            </nav>
+        </div>
+    </header>   <!-- FIN Encabezado de la pagina -->
+
+    <main>  <!-- Cuerpo de la pagina (añadir ultimas conferencias y porque nosotros) -->
+        <div class="TituloDiv">
+            <h1>2. Introduce los datos para realizar la reserva:</h1>
+        </div>
+        <div class="ImagenInfoDiv"> <!-- Div para la imagen e info-->
+            <div class="ImagenDiv"> <!-- Div para la imagen-->
+                <img src="./images/sala1.png" alt="sala1img">  
+            </div>
+            <div class="TextoInfDiv">   <!-- Div para el texto inferior a la imagen -->
+                Sala alojada en Barceló Hotels & Resorts Cádiz. <p></p>
+                Aforo máximo: 150 personas. <p></p>
+                Posee proyector, pizarra y camaras para una posible transmision en vivo. <p></p>
+            </div>
+        </div>
+
+        <div class="TituloFormDiv"> <!-- Div para el formulario y titulo de la sala -->
+            <h1>Sala Skyline</h1>   <!-- Titulo de la sala -->
+            <div class="FormularioDiv">     <!-- Div para el formulario -->
+                <form action="reservado.html" method="get"> <!-- ¡CUIDADO! reservado.html está puesto como algo meramente ilustrativo, hay que preguntar que poner -->
+                    <p>Nombre: <input type="text" name="nombre" size="30" required></p>  <!-- Introducir Nombre -->
+                    <p>Apellidos: <input type="text" name="apellidos" size="30" required></p>   <!-- Introducir Apellidos -->
+                    <p>Correo: <input type="email" name="correo" size="30" required></p>    <!-- Introducir Correo -->
+                    <p>Telefono: <input type="tel" name="telefono" size="30" required></p>  <!-- Introducir telefono -->
+                    
+                    <p>Seleccione las horas a reservar:             <!-- Introducir horas de reserva -->
+                        <input type="checkbox" name="h1" id="h1">
+                        <label for="h1">10:00h - 11:00h</label>
+                        <input type="checkbox" name="h2" id="h2">
+                        <label for="h2">11:00h - 12:00h</label>
+                        <input type="checkbox" name="h3" id="h3">
+                        <label for="h3">12:00h - 13:00h</label>
+                        <input type="checkbox" name="h4" id="h4">
+                        <label for="h4">13:00h - 14:00h</label>
+                        <input type="checkbox" name="h5" id="h5">
+                        <label for="h5">16:00h - 17:00h</label>              
+                    </p>
+
+                    <p><input type="submit" name="Enviar" id="enviar"></p>  <!-- Introducir boton de enviar -->
+                    <div class="InfoExtraDiv">  <!-- Div para informacion acerca de los datos -->
+                        *Al pulsar el boton de “Reservar sala” acepta los terminos y condiciones de la página, además del tratamiento de sus datos. <p></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer> <!-- Barra inferior (Para contacto y redes sociales) -->
+        <div class="ContactoDiv">   <!-- Div para el contacto-->
+            Telefono: 626 47 18 22 <p></p>
+            Correo electrónico: contactoayuda@MindMeetings.com <p></p>
+            Direccion: Av. Universidad de Cádiz, 10, 11519 Puerto Real, Cádiz <p></p>
+        </div>
+
+        <div class="CopyDiv">   <!-- Div para el copy-->
+            &copy; MindMeetings 2023 <p></p>
+        </div>
+
+        <div class="RedesSocialesDiv">  <!-- Div para las redes sociales-->
+            <div class="RedesSocialesTexto">    <!-- Texto -->
+                Sígenos en nuestras redes sociales
+            </div>
+            <a href="https://www.instagram.com/">   <!-- insta -->
+                <img src="./images/insta.png" alt="RedesSocialesInstaImg">
+            </a>
+            <a href="https://facebook.com/">        <!-- Face -->
+                <img src="./images/face.png" alt="RedesSocialesFaceImg">
+            </a>
+            <a href="https://twitter.com/">         <!-- Twit -->
+                <img src="./images/twit.png" alt="RedesSocialesTwitImg">
+            </a>
+        </div>
+    </footer>   <!-- Fin de Barra inferior -->
+</body>
+</html>

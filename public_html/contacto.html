@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Necesitas ayuda?</title>
+</head>
+<body>
+    
+    <header id="Main-Header">  <!-- Encabezado de la pagina (Reservado para la barra de navegacion principal)-->
+        <div class="BarraNavDiv">   <!-- Div para al barra principal de navegacion -->
+            <a href="./index.html"> <!-- Link para la imagen del logo -->
+                <img src="./images/logoMM.png" alt="ImagenLogo">
+            </a>
+            <h1>MindMeetings</h1>   <!-- Titulo de la barra de navegacion -->
+            <nav>
+                <ul>
+                    <li> <a href="./index.html">Inicio</a></li> <!-- Opcion Inicio -->
+                    <li> <a href="./salas.html">Salas</a></li>  <!-- Opcion Salas -->
+                    <li> <a href="./contacto.html">Contacto</a></li> <!-- Opcion Contacto -->
+                </ul>
+            </nav>
+        </div>
+    </header>   <!-- FIN Encabezado de la pagina -->
+
+    <main>
+        <div class="TituloDiv"> <!-- Div para el titulo -->
+            <h1>¿Has tenido algún problema? Haznoslo saber.</h1>
+        </div>
+
+        <div class="FormularioDiv">
+            <form action="ayudado.html" method="get"> <!-- ¡CUIDADO! ayudado.html está puesto como algo meramente ilustrativo, hay que preguntar que poner -->
+                <p>Nombre: <input type="text" name="nombre" size="30" required></p>  <!-- Introducir Nombre -->
+                <p>Apellidos: <input type="text" name="apellidos" size="30" required></p>   <!-- Introducir Apellidos -->
+                <p>Correo: <input type="email" name="correo" size="30" required></p>    <!-- Introducir Correo -->
+                <p>Telefono: <input type="tel" name="telefono" size="30" required></p>  <!-- Introducir telefono -->
+                <p>Resume tu problema: <input type="text" name="problema" size="120" required></p>  <!-- Introducir problema -->
+
+                <p><input type="submit" name="Enviar" id="Enviar"></p>  <!-- Introducir boton de enviar -->
+                <div class="InfoExtraDiv">  <!-- Div para info extra -->
+                    *Al pulsar el boton de “Reservar sala” acepta los terminos y condiciones de la página, además del tratamiento de sus datos. <p></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="ImagenContactoDiv"> <!-- Div para la imagen de contacto -->
+            <img src="./images/contacto.png" alt="contactoimg"> <p></p>
+        </div>
+    </main>
+
+
+
+    <footer> <!-- Barra inferior (Para contacto y redes sociales) -->
+        <div class="ContactoDiv">   <!-- Div para el contacto-->
+            Telefono: 626 47 18 22 <p></p>
+            Correo electrónico: contactoayuda@MindMeetings.com <p></p>
+            Direccion: Av. Universidad de Cádiz, 10, 11519 Puerto Real, Cádiz <p></p>
+        </div>
+
+        <div class="CopyDiv">   <!-- Div para el copy-->
+            &copy; MindMeetings 2023 <p></p>
+        </div>
+
+        <div class="RedesSocialesDiv">  <!-- Div para las redes sociales-->
+            <div class="RedesSocialesTexto">    <!-- Texto -->
+                Sígenos en nuestras redes sociales
+            </div>
+            <a href="https://www.instagram.com/">   <!-- insta -->
+                <img src="./images/insta.png" alt="RedesSocialesInstaImg">
+            </a>
+            <a href="https://facebook.com/">        <!-- Face -->
+                <img src="./images/face.png" alt="RedesSocialesFaceImg">
+            </a>
+            <a href="https://twitter.com/">         <!-- Twit -->
+                <img src="./images/twit.png" alt="RedesSocialesTwitImg">
+            </a>
+        </div>
+    </footer>   <!-- Fin de Barra inferior -->
+</body>
+</html>
