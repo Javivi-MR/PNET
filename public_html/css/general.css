@@ -35,8 +35,7 @@ body{
 }
 
 /* MindMeetings */
-
-.titulo {
+.titulo-MM {
 	position: absolute;
 	width: 415px;
 	height: 130px;
@@ -66,3 +65,31 @@ body{
 	mix-blend-mode: normal;
 	border-radius: 49px;
 }
+
+/* Texto esquina superior derecha */
+.texto-salas-contacto{
+	position: absolute;
+	/*Salas
+	width: 122px;
+	height: 130px;
+	left: 1724px;*/
+
+	/*Contacto
+	width: 197px;
+	height: 130px;
+	left: 1859px;*/
+	
+	top: 0px;
+
+	font-family: 'Josefin Sans';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 40px;
+	line-height: 40px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+	color: #F1F1F1;
+}
+
