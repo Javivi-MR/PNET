@@ -1,0 +1,25 @@
+/* ============= Cabecera =============
+<head>
+	<meta charset="utf-8">
+	<title>Cosas para todas las páginas</title>
+	<link rel="stylesheet" type="text/css" href="general.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+   ================================== */
+
+.color{
+    color: rgb(221,160,221);
+	color: rgb(100,69,100);
+	color: rgb(245,240,205);
+	color: rgb(241,241,241);
+	color: rgb(0,0,0);
+}
+
+body{
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+
+
