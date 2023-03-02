@@ -9,17 +9,60 @@
 </head>
    ================================== */
 
+body{
+	font-family: 'Josefin Sans', sans-serif;
+	color:black;
+}
+
 .color{
-    color: rgb(221,160,221);
+    color: plum;
 	color: rgb(100,69,100);
 	color: rgb(245,240,205);
 	color: rgb(241,241,241);
-	color: rgb(0,0,0);
+	color: black;
 }
 
-body{
-	font-family: 'Josefin Sans', sans-serif;
+/* Rectangulo header */
+.head-box{
+	box-sizing: border-box;
+	position: absolute;
+	width: 2066px;
+	height: 130px;
+	left: 0px;
+	top: 0px;
+	background: #DDA0DD;
+	mix-blend-mode: normal;
 }
 
+/* MindMeetings */
 
+.titulo {
+	position: absolute;
+	width: 415px;
+	height: 130px;
+	left: 199px;
+	top: 0px;
 
+	font-family: 'Josefin Sans';
+	font-style: italic;
+	font-weight: 600;
+	font-size: 60px;
+	line-height: 60px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+	color: #F1F1F1;
+}
+
+.logo-MM {
+	position: absolute;
+	width: 155px;
+	height: 88px;
+	left: 28px;
+	top: 21px;
+
+	background: url(PNET\public_html\images\logoMM.png);
+	mix-blend-mode: normal;
+	border-radius: 49px;
+}
