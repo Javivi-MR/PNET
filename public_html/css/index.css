@@ -1,0 +1,209 @@
+body{
+    margin: 0;
+}
+
+
+.ReservaTuSalaDiv {
+    background-image: url("../images/sala1.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 45em; /* ajusta la altura según tus necesidades */
+    display: flex;
+    align-items: center;
+}
+
+.FondoOscuroDiv{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.TituloImagenDiv{
+    margin-top: 3em;
+    align-items: center;
+}
+
+
+h2{
+    color: #F1F1F1;
+    margin-left: 1em;
+    margin-right: 1em;
+    align-items: center;
+}
+
+.SeccionReservarDiv{
+    background-color:rgba(0, 0, 0, 0.5);
+    margin-top: 10em;
+    border-radius: 1em;
+}
+
+#BotonReservar{
+    color: #F1F1F1;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    display: block;
+}
+
+.InformacionAdicional{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: row;
+}
+
+.UltCursosDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    background-color: #F5F0CD;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    margin-left: 3em;
+    margin-right: 3em;
+    border-radius: 1em;
+}   
+
+
+.TituloUltCursos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ImagenCursoDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ImagenCurso{
+    height: 40%;
+    width: 40%;
+    display: block;
+    margin: auto;
+}
+
+.ContenidoCursoDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 4em;
+    margin-left: 4em;
+    text-align: center
+}
+
+.MasInfoDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.ValoresDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin-top: 2em;
+    margin-bottom: 3em;
+    margin-left: 3em;
+    margin-right: 3em;
+    border-radius: 1em;
+}
+
+.TituloValores{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.CompromisoDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ImagenValoresDiv{
+    background-color: #F5F0CD;
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ImagenValores
+{
+    height: 60%;
+    width: 60%;
+    margin-bottom: 3px;
+    margin-left: 2px;
+}
+
+.CompromisoTexto{
+    margin-left: 2em;
+}
+
+.RentabilidadDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.ImagenRentabilidadDiv{
+    background-color: #F5F0CD;
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 14%;
+    margin-left: 0.7em;
+}
+
+#ImagenRentabilidad{
+    height: 62%;
+    width: 62%;
+    margin-bottom: 3px;
+    margin-left: 2px;
+}
+
+.RentabilidadTexto{
+    margin-left: 2em;
+}
+
+.DisponibilidadDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1em;
+}
+
+.ImagenDisponibilidadDiv{
+    background-color: #F5F0CD;
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 14%;
+    margin-left: 0.7em;
+}
+
+#ImagenDisponibilidad{
+    height: 69%;
+    width: 85%;
+    margin-bottom: 3px;
+    margin-left: 2px;
+    margin-top: 2px;
+}
+
+.DisponibilidadTexto{
+    margin-right: 1em;
+}

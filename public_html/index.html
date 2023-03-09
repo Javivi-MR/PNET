@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reserva tus salas ahora</title>
+    <link rel="stylesheet" type="text/css" href="./css/general.css">
     <link rel="stylesheet" type="text/css" href="./css/index.css">
 </head><!--   FIN Parte no visible  -->
 <body>  <!--Cuerpo de la pagina (Parte visible) -->
@@ -30,52 +31,69 @@
 
     <main>  <!-- Cuerpo de la pagina (añadir ultimas conferencias y porque nosotros)-->
         <div class="ReservaTuSalaDiv"> <!-- div de reserva una sala -->
-            <img src="./images/sala1.png" alt="ImagenSala1" >    <!--   Imagen sala 1 -->
-            <h2>Reservar salas es ahora más fácil que nunca</h2>    <!-- Frase en la imagen de la sala 1-->
-            <p></p>  <!-- Salto de linea -->
-            <div class="SeccionReservarDiv">  
-                <a href="./salas.html">Reservar una sala</a> <!-- link del "boton" de reservas-->
+            <div class="FondoOscuroDiv">
+                <div class="TituloImagenDiv">
+                    <h2>Reservar salas es ahora más fácil que nunca</h2>    <!-- Frase en la imagen de la sala 1-->
+                </div>
+                <div class="SeccionReservarDiv">  
+                    <a href="./salas.html" id="BotonReservar">Reservar una sala</a> <!-- link del "boton" de reservas-->
+                </div>
             </div>
         </div>
 
-        <div class="UltConferenciasDiv"> <!-- div de ultimas conferencias -->
-            <article>  <!-- Tipo articulo -->
-                <h3>Ultimas conferencias</h3>  <!-- titulo del articulo -->
-                <img src="./images/sala2.png" alt="ImagenSala2">  <!-- Imagen de la sala2-->
-                <h4>Curso en seguridad informática</h4>  <!-- Titulo de la conferencia -->
-                <div class="ContenidoConferenciaDiv">   <!-- Contenido de la conferencia -->
-                    Ponentes de la empresa VMware darán un seminario orientado a como proteger bases de datos...
-                </div>
-                <p></p>
-                <div class="MasInfoDiv">   <!--  Espacio a mas informacion -->
-                    <a href="https://www.vmware.com/es.html">+Info</a> 
-                </div>
-            </article>
-        </div>
+        <div class="InformacionAdicional">
+            <div class="UltCursosDiv"> <!-- div de ultimas conferencias -->
+                <article>  <!-- Tipo articulo -->
+                    <div class="TituloUltCursos">
+                        <h3>Últimos cursos</h3>  <!-- titulo del articulo -->
+                    </div>
+                    <div id="ImagenCursoDiv">
+                        <img src="./images/sala2.png" alt="ImagenSala2" id="ImagenCurso">  <!-- Imagen de la sala2-->
+                    </div>
+                    <div class="TituloUltCursos">
+                        <h4>Curso en seguridad informática</h4>  <!-- Titulo de la conferencia -->
+                    </div>
+                    <div class="ContenidoCursoDiv">   <!-- Contenido de la conferencia -->
+                        Ponentes de la empresa VMware darán un seminario orientado a como proteger bases de datos...
+                    </div>
+                    <div class="MasInfoDiv">   <!--  Espacio a mas informacion -->
+                        <a href="https://www.vmware.com/es.html">+Info</a> 
+                    </div>
+                </article>
+            </div>
 
-        <div class="ValoresDiv">    <!-- Div para los valores de la empresa -->
-            <article>   <!-- Tipo articulo -->
-                <h5>¿Por qué usar MindMeetings?</h5>    <!-- Titulo global -->
-                <div class="CompromisoDiv">  <!-- Div para el valor Compromiso -->
-                    <img src="./images/compromiso.png" alt="CompromisoImg">     <!-- Imagen del icono compromiso -->
-                    <div class="CompromisoTexto">   <!-- Div para el texto -->
-                        Nos comprometemos a ofrecer el mejor servicio.  <!-- texto de compromiso -->
+            <div class="ValoresDiv">    <!-- Div para los valores de la empresa -->
+                <article>   <!-- Tipo articulo -->
+                    <div class="TituloValores">
+                        <h3>¿Por qué usar MindMeetings?</h3>    <!-- Titulo global -->
                     </div>
-                </div>
-                <div class="RentabilidadDiv">   <!-- Div para el valor Rentabilidad -->
-                    <img src="./images/Rentabilidad.png" alt="RentabilidadImg"> <!-- Imagen del icono Rentabilidad -->
-                    <div class="RentabilidadTexto"> <!-- Div para el texto -->
-                        Siempre encontraras la mejor sala al mejor precio.  <!-- texto de Rentabilidad -->
+                    <div class="CompromisoDiv">  <!-- Div para el valor Compromiso -->
+                        <div class="ImagenValoresDiv">
+                            <img src="./images/compromiso.png" alt="CompromisoImg" id="ImagenValores">     <!-- Imagen del icono compromiso -->
+                        </div>
+                        <div class="CompromisoTexto">   <!-- Div para el texto -->
+                            Nos comprometemos a ofrecer el mejor servicio.  <!-- texto de compromiso -->
+                        </div>
                     </div>
-                </div>
-                <div class="DisponibilidadDiv"> <!-- Div para el valor Disponibilidad -->
-                    <img src="./images/Disponibilidad.png" alt="DisponibilidadImg"> <!-- Imagen del icono Disponibilidad -->
-                    <div class="DisponibilidadTexto">   <!-- Div para el texto -->
-                        Cancelación gratuita hasta 24 horas antes.  <!-- texto de Disponibilidad -->
+                    <div class="RentabilidadDiv">   <!-- Div para el valor Rentabilidad -->
+                        <div class="ImagenRentabilidadDiv">
+                            <img src="./images/Rentabilidad.png" alt="RentabilidadImg" id="ImagenRentabilidad"> <!-- Imagen del icono Rentabilidad -->
+                        </div>
+                        <div class="RentabilidadTexto"> <!-- Div para el texto -->
+                            Siempre encontraras la mejor sala al mejor precio.  <!-- texto de Rentabilidad -->
+                        </div>
                     </div>
-                    <p></p>
-                </div>
-            </article>
+                    <div class="DisponibilidadDiv"> <!-- Div para el valor Disponibilidad -->
+                        <div class="ImagenDisponibilidadDiv">
+                            <img src="./images/Disponibilidad.png" alt="DisponibilidadImg" id="ImagenDisponibilidad"> <!-- Imagen del icono Disponibilidad -->
+                        </div>
+                        <div class="DisponibilidadTexto">   <!-- Div para el texto -->
+                            Cancelación gratuita hasta 24 horas antes.  <!-- texto de Disponibilidad -->
+                        </div>
+                        <p></p>
+                    </div>
+                </article>
+            </div>
         </div>
     </main> <!-- FIN Cuerpo de la pagina -->
 
