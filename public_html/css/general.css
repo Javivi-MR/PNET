@@ -1,0 +1,95 @@
+/* ============= Cabecera =============
+<head>
+	<meta charset="utf-8">
+	<title>Cosas para todas las páginas</title>
+	<link rel="stylesheet" type="text/css" href="general.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+   ================================== */
+
+body{
+	font-family: 'Josefin Sans', sans-serif;
+	color:black;
+}
+
+.color{
+    color: plum;
+	color: rgb(100,69,100);
+	color: rgb(245,240,205);
+	color: rgb(241,241,241);
+	color: black;
+}
+
+/* Rectangulo header */
+.head-box{
+	box-sizing: border-box;
+	position: absolute;
+	width: 2066px;
+	height: 130px;
+	left: 0px;
+	top: 0px;
+	background: #DDA0DD;
+	mix-blend-mode: normal;
+}
+
+/* MindMeetings */
+.titulo-MM {
+	position: absolute;
+	width: 415px;
+	height: 130px;
+	left: 199px;
+	top: 0px;
+
+	font-family: 'Josefin Sans';
+	font-style: italic;
+	font-weight: 600;
+	font-size: 60px;
+	line-height: 60px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+	color: #F1F1F1;
+}
+
+.logo-MM {
+	position: absolute;
+	width: 155px;
+	height: 88px;
+	left: 28px;
+	top: 21px;
+
+	background: url(PNET\public_html\images\logoMM.png);
+	mix-blend-mode: normal;
+	border-radius: 49px;
+}
+
+/* Texto esquina superior derecha */
+.texto-salas-contacto{
+	position: absolute;
+	/*Salas
+	width: 122px;
+	height: 130px;
+	left: 1724px;*/
+
+	/*Contacto
+	width: 197px;
+	height: 130px;
+	left: 1859px;*/
+	
+	top: 0px;
+
+	font-family: 'Josefin Sans';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 40px;
+	line-height: 40px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+	color: #F1F1F1;
+}
+
