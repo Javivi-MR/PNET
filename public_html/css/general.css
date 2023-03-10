@@ -1,4 +1,7 @@
 /* sustituir los pixeles por em */  
+body{
+    margin: 0;
+}
 
 .BarraNavDiv{
     background-color: #DDA0DD;  /* Color del fondo */

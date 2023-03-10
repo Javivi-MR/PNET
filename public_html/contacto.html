@@ -1,27 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¿Necesitas ayuda?</title>
+    <link rel="stylesheet" type="text/css" href="./css/general.css">
 </head>
 <body>
     
     <header id="Main-Header">  <!-- Encabezado de la pagina (Reservado para la barra de navegacion principal)-->
-        <div class="BarraNavDiv">   <!-- Div para al barra principal de navegacion -->
-            <a href="./index.html"> <!-- Link para la imagen del logo -->
-                <img src="./images/logoMM.png" alt="ImagenLogo">
-            </a>
-            <h1>MindMeetings</h1>   <!-- Titulo de la barra de navegacion -->
-            <nav>
-                <ul>
-                    <li> <a href="./index.html">Inicio</a></li> <!-- Opcion Inicio -->
-                    <li> <a href="./salas.html">Salas</a></li>  <!-- Opcion Salas -->
-                    <li> <a href="./contacto.html">Contacto</a></li> <!-- Opcion Contacto -->
-                </ul>
-            </nav>
-        </div>
+        <nav class="BarraNavDiv">
+            <div class="ImagenLogoDiv">
+                <a href="./index.html"> <!-- Link para la imagen del logo -->
+                    <img src="./images/logoMM.png" alt="ImagenLogo" class="ImagenLogo" height="100px">
+                </a>
+            </div>
+            <div class="Titulo">
+                <h1>MindMeetings</h1>  <!-- Titulo de la barra de navegacion -->
+            </div>
+            
+            <ul class="ListaBarraNav">
+                <li> <a href="./index.html" class="ElementoBarraNav">Inicio</a></li> <!-- Opcion Inicio -->
+                <li> <a href="./salas.html" class="ElementoBarraNav">Salas</a></li>  <!-- Opcion Salas -->
+                <li> <a href="./contacto.html" class="ElementoBarraNav">Contacto</a></li> <!-- Opcion Contacto -->
+            </ul>
+        </nav>
     </header>   <!-- FIN Encabezado de la pagina -->
 
     <main>
@@ -51,11 +55,11 @@
 
 
 
-    <footer> <!-- Barra inferior (Para contacto y redes sociales) -->
+    <footer id="footer"> <!-- Barra inferior (Para contacto y redes sociales) -->
         <div class="ContactoDiv">   <!-- Div para el contacto-->
-            Telefono: 626 47 18 22 <p></p>
-            Correo electrónico: contactoayuda@MindMeetings.com <p></p>
-            Direccion: Av. Universidad de Cádiz, 10, 11519 Puerto Real, Cádiz <p></p>
+            Telefono: 626 47 18 22 <br>
+            Correo electrónico: contactoayuda@MindMeetings.com <br>
+            Direccion: Av. Universidad de Cádiz, 10, 11519 Puerto Real, Cádiz
         </div>
 
         <div class="CopyDiv">   <!-- Div para el copy-->
@@ -63,18 +67,22 @@
         </div>
 
         <div class="RedesSocialesDiv">  <!-- Div para las redes sociales-->
-            <div class="RedesSocialesTexto">    <!-- Texto -->
+            <span>
+                <div class="RedesSocialesTexto">    <!-- Texto -->
                 Sígenos en nuestras redes sociales
-            </div>
-            <a href="https://www.instagram.com/">   <!-- insta -->
-                <img src="./images/insta.png" alt="RedesSocialesInstaImg">
-            </a>
-            <a href="https://facebook.com/">        <!-- Face -->
-                <img src="./images/face.png" alt="RedesSocialesFaceImg">
-            </a>
-            <a href="https://twitter.com/">         <!-- Twit -->
-                <img src="./images/twit.png" alt="RedesSocialesTwitImg">
-            </a>
+                </div>
+                <div class="RedesSocialesImagenesDiv">
+                    <a href="https://www.instagram.com/">   <!-- insta -->
+                        <img src="./images/insta.png" alt="RedesSocialesInstaImg" id="insta" height="50px">
+                    </a>
+                    <a href="https://facebook.com/">        <!-- Face -->
+                        <img src="./images/face.png" alt="RedesSocialesFaceImg" id="face" height="50px">
+                    </a>
+                    <a href="https://twitter.com/">         <!-- Twit -->
+                        <img src="./images/twit.png" alt="RedesSocialesTwitImg" id="twit" height="50px">
+                    </a>
+                </div>
+            </span>
         </div>
     </footer>   <!-- Fin de Barra inferior -->
 </body>
