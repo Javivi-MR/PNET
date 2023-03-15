@@ -8,10 +8,76 @@
 
 .Imagenes1Div{
     display: block;
-    margin-left: 3em;
+    margin-left: 2em;
+    margin-right: 5em;
 }
 
 #sala1{
-    width: 40%;
-    height: 40%;
+    width: 50em;
+    height: 30em;
+}
+
+.Texto1Div{
+    display : block;
+    margin-right: 5em;
+    margin-bottom: 8em;
+    text-align: center;
+}
+
+h2{
+    font-size: 2em;
+    text-decoration: underline;
+    color: #000000;
+}
+
+.Reservar1BotonDiv{
+    width: fit-content;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 6em;
+    height: 3em;
+    border: 0.2em solid black; /* añade un borde negro de 2px */
+}
+
+.BotonReservar{
+    color: #000000;
+}
+
+.apartado2{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+}
+
+.Imagenes2Div{
+    display: block;
+    margin-left: 5em;
+    margin-right: 2em;
+}
+
+#sala2{
+    width: 50em;
+    height: 30em;
+}
+
+.Texto2Div{
+    display : block;
+    margin-left: 5em;
+    margin-bottom: 8em;
+    text-align: center;
+}
+
+.ReservarBotonDiv{
+    width: fit-content;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 6em;
+    height: 3em;
+    border: 0.2em solid black; /* añade un borde negro de 2px */
 }
