@@ -1,0 +1,48 @@
+.TituloDiv{
+    display: flex;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+}
+
+h2{
+    font-size: 2em;
+    text-decoration: underline;
+    color: #000000;
+}
+
+.BloquePrincipalDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ImagenInfoDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4em;
+    margin-right: 2em;
+}
+
+#ImagenSala{
+    width: 50em;
+    height: 30em;
+}
+
+.TextoInfDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+}
+
+.FormularioDiv{
+    display: flex;
+}
+
+.TituloFormDiv{
+    
+}
