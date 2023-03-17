@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¿Necesitas ayuda?</title>
     <link rel="stylesheet" type="text/css" href="./css/general.css">
+    <link rel="stylesheet" type="text/css" href="./css/contacto.css">
 </head>
 <body>
     
@@ -30,26 +31,46 @@
 
     <main>
         <div class="TituloDiv"> <!-- Div para el titulo -->
-            <h1>¿Has tenido algún problema? Haznoslo saber.</h1>
+            <h2>¿Has tenido algún problema? Haznoslo saber.</h2>
         </div>
+        <div class="BloquePrincipalDiv">
+            <div class="FormularioInfoDiv">
+                <div class="FormularioDiv">
+                    <form action="ayudado.html" method="get"> <!-- ¡CUIDADO! ayudado.html está puesto como algo meramente ilustrativo, hay que preguntar que poner -->
+                        <div class="InputDiv">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" name="nombre" size="30" required> <!-- Introducir Nombre -->
+                        </div>
+                        <div class="InputDiv">
+                            <label for="apellidos">Apellidos:</label>
+                            <input type="text" name="apellidos" size="30" required>   <!-- Introducir Apellidos -->
+                        </div>
+                        <div class="InputDiv">
+                            <label for="correo">Correo:</label>
+                            <input type="email" name="correo" size="30" required>    <!-- Introducir Correo -->
+                        </div>
+                        <div class="InputDiv">
+                            <label for="telefono">Telefono:</label>
+                            <input type="tel" name="telefono" size="30" required>  <!-- Introducir telefono -->
+                        </div>
+                        <div class="InputDiv">
+                            <label for="problema">Problema:</label>
+                            <input type="text" name="problema" size="120" required id="problema">  <!-- Introducir problema -->
+                        </div>
 
-        <div class="FormularioDiv">
-            <form action="ayudado.html" method="get"> <!-- ¡CUIDADO! ayudado.html está puesto como algo meramente ilustrativo, hay que preguntar que poner -->
-                <p>Nombre: <input type="text" name="nombre" size="30" required></p>  <!-- Introducir Nombre -->
-                <p>Apellidos: <input type="text" name="apellidos" size="30" required></p>   <!-- Introducir Apellidos -->
-                <p>Correo: <input type="email" name="correo" size="30" required></p>    <!-- Introducir Correo -->
-                <p>Telefono: <input type="tel" name="telefono" size="30" required></p>  <!-- Introducir telefono -->
-                <p>Resume tu problema: <input type="text" name="problema" size="120" required></p>  <!-- Introducir problema -->
-
-                <p><input type="submit" name="Enviar" id="Enviar"></p>  <!-- Introducir boton de enviar -->
-                <div class="InfoExtraDiv">  <!-- Div para info extra -->
-                    *Al pulsar el boton de “Reservar sala” acepta los terminos y condiciones de la página, además del tratamiento de sus datos. <p></p>
+                        <label for="enviar"></label>
+                        <input type="submit" name="Enviar" id="enviar" value="Recibir ayuda">  <!-- Introducir boton de enviar -->
+                    </form>
                 </div>
-            </form>
-        </div>
+                <div class="InfoExtraDiv">  <!-- Div para info extra -->
+                        *Al pulsar el boton de “Recibir ayuda” acepta los terminos y condiciones de la página, además del tratamiento de sus datos. <p></p>
+                </div>
+            </div>
+        
 
-        <div class="ImagenContactoDiv"> <!-- Div para la imagen de contacto -->
-            <img src="./images/contacto.png" alt="contactoimg"> <p></p>
+            <div class="ImagenContactoDiv"> <!-- Div para la imagen de contacto -->
+                <img src="./images/contacto.png" alt="contactoimg" id="agente"> <p></p>
+            </div>
         </div>
     </main>
 

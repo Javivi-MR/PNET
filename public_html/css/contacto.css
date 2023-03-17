@@ -1,0 +1,73 @@
+h2{
+    font-size: 2em;
+    text-decoration: underline;
+    color: #000000;
+    margin-top: 1em;
+    margin-bottom: 3em;
+    margin-left: 1em;
+}
+
+.BloquePrincipalDiv
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: 11.3em;
+    margin-left: 2em;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.5em;
+}
+  
+form > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Puedes ajustar el valor según sea necesario */
+    margin-right: 20px;
+}
+  
+label {
+    width: 100px; /* Puedes ajustar el valor según sea necesario */
+    text-align: right;
+    margin-right: 10px; /* Puedes ajustar el valor según sea necesario */
+}
+
+#problema{
+    height: 4em;
+    width: 18em;
+}
+.FormularioInfoDiv{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;    
+    font-size: 1.2em;
+    margin-right: 3em;
+}
+.FormularioDiv{
+    display: flex;
+    background-color: bisque;
+    width: 60%;
+    height: 14em;
+    border-radius: 1em;
+    align-items: center;
+    justify-content: center;
+}
+
+.InfoExtraDiv{
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    margin-left: 3em;
+}
+
+#agente{
+    width: 20em;
+    height: 20em;
+}

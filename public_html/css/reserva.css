@@ -39,10 +39,59 @@ h2{
     font-size: 1.2em;
 }
 
-.FormularioDiv{
+.TituloFormularioDiv{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: auto;
+    margin-left: 5em;
 }
 
 .TituloFormDiv{
-    
+    text-align: center;
+    text-decoration: underline;
+    font-size: 1.5em;
+}
+
+.FormularioDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: bisque;
+    width: 60%;
+    border-radius: 1em;
+    height: 18em;
+    font-size: 1.2em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.5em;
+}
+  
+form > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Puedes ajustar el valor según sea necesario */
+}
+  
+label {
+    width: 100px; /* Puedes ajustar el valor según sea necesario */
+    text-align: right;
+    margin-right: 10px; /* Puedes ajustar el valor según sea necesario */
+}
+
+.HorasDispDiv{
+    flex-direction: column;
+    margin-left: 2em;
+}
+
+.InfoExtraDiv{
+    align-items: center;
+    justify-content: center;
+    width: 50%;
 }
