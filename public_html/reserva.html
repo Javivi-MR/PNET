@@ -7,6 +7,9 @@
     <title>Reserva tu sala ¡YA!</title>
     <link rel="stylesheet" type="text/css" href="./css/general.css">
     <link rel="stylesheet" type="text/css" href="./css/reserva.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
 
@@ -24,6 +27,7 @@
             <ul class="ListaBarraNav">
                 <li> <a href="./index.html" class="ElementoBarraNav">Inicio</a></li> <!-- Opcion Inicio -->
                 <li> <a href="./salas.html" class="ElementoBarraNav">Salas</a></li>  <!-- Opcion Salas -->
+                <li> <a href="./reserva.html" class="ElementoBarraNav">Reservar</a></li> <!-- Opcion Reservar -->
                 <li> <a href="./contacto.html" class="ElementoBarraNav">Contacto</a></li> <!-- Opcion Contacto -->
             </ul>
         </nav>
@@ -66,6 +70,10 @@
                         <div class="InputDiv">
                             <label for="telefono">Telefono:</label>
                             <input type="tel" name="telefono" size="30" required>  <!-- Introducir telefono -->
+                        </div>
+                        <div class="InputDiv">
+                            <label for="fecha">Fecha:</label>
+                            <input type="text" name="fecha" id="fecha" size="30" required>
                         </div>
                                  <!-- Introducir horas de reserva -->
                         <div class="HorasResDiv">

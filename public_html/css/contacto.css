@@ -3,7 +3,7 @@ h2{
     text-decoration: underline;
     color: #000000;
     margin-top: 1em;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
     margin-left: 1em;
 }
 
@@ -12,10 +12,7 @@ h2{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 1em;
-    margin-bottom: 11.3em;
-    margin-left: 2em;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 form {
@@ -24,6 +21,7 @@ form {
     align-items: center;
     justify-content: center;
     margin-right: 1.5em;
+    width: auto;
 }
   
 form > div {
@@ -45,26 +43,29 @@ label {
 }
 .FormularioInfoDiv{
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;    
+    flex-direction: column; 
     font-size: 1.2em;
-    margin-right: 3em;
+    
 }
-.FormularioDiv{
+.FormularioDiv {
     display: flex;
     background-color: bisque;
-    width: 60%;
-    height: 14em;
     border-radius: 1em;
     align-items: center;
     justify-content: center;
+    padding: 1em; /* Add padding to give some space around the content */
+    width: fit-content;
 }
 
 .InfoExtraDiv{
+    display: flex;
     align-items: center;
     text-align: center;
-    width: 50%;
-    margin-left: 3em;
+    width: 23em;
+}
+
+.ImagenContactoDiv{
+    display: flex;
 }
 
 #agente{
@@ -77,4 +78,25 @@ label {
 	border-radius: 20px;
     width: 10m;
     height: 2em;
+}
+
+.BloqueSecundarioDiv
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    justify-content: space-around;
+    
+}
+
+.MapaDiv
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }
