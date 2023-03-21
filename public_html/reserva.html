@@ -41,12 +41,12 @@
         <div class="BloquePrincipalDiv">
             <div class="ImagenInfoDiv"> <!-- Div para la imagen e info-->
                 <div class="ImagenDiv"> <!-- Div para la imagen-->
-                    <img src="./images/sala1.png" alt="sala1img" id="ImagenSala">
+                    <img src="./images/sala1.jpg" alt="sala1img" id="ImagenSala">
                 </div>
                 <div class="TextoInfDiv">   <!-- Div para el texto inferior a la imagen -->
-                    <p>Sala alojada en Barceló Hotels & Resorts Cádiz.</p>
-                    <p>Aforo máximo: 150 personas.</p>
-                    <p>Posee proyector, pizarra y camaras para una posible transmision en vivo.</p>
+                    <p>Sala alojada en la biblioteca Luis Berenguer, San Fernando.</p>
+                    <p>Aforo máximo: 10 personas.</p>
+                    <p>Para mas informacion visite el espacio de <a href="./salas.html">Salas</a>.</p>
                 </div>
             </div>
             <div class="TituloFormularioDiv">     <!-- Div para el formulario -->
@@ -74,6 +74,14 @@
                         <div class="InputDiv">
                             <label for="fecha">Fecha:</label>
                             <input type="text" name="fecha" id="fecha" size="30" required>
+                        </div>
+                        <div class="InputDiv">
+                            <label for="sala">Sala:</label>
+                            <select id="sala" name="sala" required>
+                                <option value="SalaDeEstudiosGeneralSerrano">Sala de estudios General Serrano</option>
+                                <option value="SalaDeEstudiosMaríaLeón">Sala de estudios María León</option>
+                                <option value="SalaDeMeetingPoint">Sala de MeetingPoint</option>
+                            </select>
                         </div>
                                  <!-- Introducir horas de reserva -->
                         <div class="HorasResDiv">
