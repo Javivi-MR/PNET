@@ -1,5 +1,6 @@
 $(function() {
-    $('#sala').change(function() {
+    $('#sala').change(function() 
+    {
         var opcionSeleccionada = $(this).val();
         switch(opcionSeleccionada) 
         {

@@ -61,7 +61,7 @@ h2{
     background-color: bisque;
     width: 22em;
     border-radius: 1em;
-    height: 22em;
+    height: 23em;
     font-size: 1.2em;
 }
 
@@ -102,3 +102,7 @@ label {
     width: 10m;
     height: 2em;
 }
+
+.error {
+    background-color: #ff7d7d7d;
+  }

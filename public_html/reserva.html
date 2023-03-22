@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="./scripts/SeleccionFecha.js"></script>
-    <script src="./scripts/CambiarInfo.js"></script>
+    <script src="./js/SeleccionFecha.js"></script>
+    <script src="./js/CambiarInfo.js"></script>
+    <script src="./js/validacion-formulario.js"></script>
 </head>
 <body>
 
@@ -48,7 +49,7 @@
                 <div class="TextoInfDiv">   <!-- Div para el texto inferior a la imagen -->
                     <p id="inf1">Sala alojada en la biblioteca Luis Berenguer, San Fernando.</p>
                     <p id="inf2">Aforo máximo: 10 personas.</p>
-                    <p>Para mas informacion visite el espacio de <a href="./salas.html">Salas</a>.</p>
+                    <p>Para mas informacion acerca de esta sala, visite el espacio de <a href="./salas.html">Salas</a>.</p>
                 </div>
             </div>
             <div class="TituloFormularioDiv">     <!-- Div para el formulario -->
@@ -59,23 +60,27 @@
                     <form action="reservado.html" method="get"> <!-- ¡CUIDADO! reservado.html está puesto como algo meramente ilustrativo, hay que preguntar que poner -->
                         <div class="InputDiv">
                             <label for="nombre">Nombre:</label>
-                            <input type="text" name="nombre" size="30" required> <!-- Introducir Nombre -->
+                            <input type="text" name="nombre" size="30" id="nombre" required> <!-- Introducir Nombre -->
                         </div>
                         <div class="InputDiv">
                             <label for="apellidos">Apellidos:</label>
-                            <input type="text" name="apellidos" size="30" required>   <!-- Introducir Apellidos -->
+                            <input type="text" name="apellidos" size="30" id="apellidos" required>   <!-- Introducir Apellidos -->
                         </div>
                         <div class="InputDiv">
                             <label for="correo">Correo:</label>
-                            <input type="email" name="correo" size="30" required>    <!-- Introducir Correo -->
+                            <input type="email" name="correo" id="correo" size="30" required>    <!-- Introducir Correo -->
                         </div>
                         <div class="InputDiv">
                             <label for="telefono">Telefono:</label>
-                            <input type="tel" name="telefono" size="30" required>  <!-- Introducir telefono -->
+                            <input type="tel" name="telefono" id="telefono" size="30" required>  <!-- Introducir telefono -->
                         </div>
                         <div class="InputDiv">
                             <label for="fecha">Fecha:</label>
                             <input type="text" name="fecha" id="fecha" size="30" autocomplete="off" required>
+                        </div>
+                        <div class="InputDiv">
+                            <label for="NumPer">Numero de personas:</label>
+                            <input type="text" name="NumPer" id="NumPer" size="30" required>
                         </div>
                         <div class="InputDiv">
                             <label for="sala">Sala:</label>

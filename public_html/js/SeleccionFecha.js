@@ -2,7 +2,7 @@ $( function() {
     $( "#fecha" ).datepicker({
       numberOfMonths: 1,
       showButtonPanel: true,
-      minDate: new Date(), // Establece la fecha mínima como la fecha actual
+      minDate: 1 // Establece la fecha mínima como mañana
     });
   
     // Evita que se escriba en el campo de fecha
