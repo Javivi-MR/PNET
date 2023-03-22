@@ -90,8 +90,9 @@ label {
     margin-left: 2em;
 }
 
-.InfoExtraDiv{
+.InfoExtra{
     align-items: center;
+    text-align: center;
     justify-content: center;
     width: 50%;
 }
