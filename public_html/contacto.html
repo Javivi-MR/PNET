@@ -14,7 +14,7 @@
         <nav class="BarraNavDiv">
             <div class="ImagenLogoDiv">
                 <a href="./index.html"> <!-- Link para la imagen del logo -->
-                    <img src="./images/logoMM.png" alt="ImagenLogo" class="ImagenLogo" height="100px">
+                    <img src="./images/logoMM.png" alt="ImagenLogo" class="ImagenLogo" height="100">
                 </a>
             </div>
             <div class="Titulo">
@@ -40,19 +40,19 @@
                     <form action="ayudado.html" method="get"> <!-- ¡CUIDADO! ayudado.html está puesto como algo meramente ilustrativo, hay que preguntar que poner -->
                         <div class="InputDiv">
                             <label for="nombre">Nombre:</label>
-                            <input type="text" name="nombre" size="30" required> <!-- Introducir Nombre -->
+                            <input type="text" name="nombre" id="nombre" size="30" required> <!-- Introducir Nombre -->
                         </div>
                         <div class="InputDiv">
                             <label for="apellidos">Apellidos:</label>
-                            <input type="text" name="apellidos" size="30" required>   <!-- Introducir Apellidos -->
+                            <input type="text" name="apellidos" id="apellidos" size="30" required>   <!-- Introducir Apellidos -->
                         </div>
                         <div class="InputDiv">
                             <label for="correo">Correo:</label>
-                            <input type="email" name="correo" size="30" required>    <!-- Introducir Correo -->
+                            <input type="email" name="correo" id="correo" size="30" required>    <!-- Introducir Correo -->
                         </div>
                         <div class="InputDiv">
                             <label for="telefono">Telefono:</label>
-                            <input type="tel" name="telefono" size="30" required>  <!-- Introducir telefono -->
+                            <input type="tel" name="telefono" id="telefono" size="30" required>  <!-- Introducir telefono -->
                         </div>
                         <div class="InputDiv">
                             <label for="problema">Problema:</label>
@@ -79,7 +79,7 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1031.83714024638!2d-6.201246048616711!3d36.53763238191367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x152f79854b8f0de1%3A0x8d075bd9e5895558!2sEscuela%20Superior%20de%20Ingenier%C3%ADa!5e0!3m2!1ses!2ses!4v1679398858857!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="VideoDiv">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/LRTOUqLmuAU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/LRTOUqLmuAU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
 
@@ -99,24 +99,22 @@
             &copy; MindMeetings 2023 <p></p>
         </div>
 
-        <div class="RedesSocialesDiv">  <!-- Div para las redes sociales-->
-            <span>
-                <div class="RedesSocialesTexto">    <!-- Texto -->
+        <div class="RedesSocialesDiv">  <!-- Div para las redes sociales-->  
+            <div class="RedesSocialesTexto">    <!-- Texto -->
                 Sígenos en nuestras redes sociales
-                </div>
-                <div class="RedesSocialesImagenesDiv">
-                    <a href="https://www.instagram.com/">   <!-- insta -->
-                        <img src="./images/insta.png" alt="RedesSocialesInstaImg" id="insta" height="50px">
-                    </a>
-                    <a href="https://facebook.com/">        <!-- Face -->
-                        <img src="./images/face.png" alt="RedesSocialesFaceImg" id="face" height="50px">
-                    </a>
-                    <a href="https://twitter.com/">         <!-- Twit -->
-                        <img src="./images/twit.png" alt="RedesSocialesTwitImg" id="twit" height="50px">
-                    </a>
-                </div>
-            </span>
-        </div>
+            </div>
+            <div class="RedesSocialesImagenesDiv">
+                <a href="https://www.instagram.com/">   <!-- insta -->
+                    <img src="./images/insta.png" alt="RedesSocialesInstaImg" id="insta" height="50">
+                </a>
+                <a href="https://facebook.com/">        <!-- Face -->
+                    <img src="./images/face.png" alt="RedesSocialesFaceImg" id="face" height="50">
+                </a>
+                <a href="https://twitter.com/">         <!-- Twit -->
+                    <img src="./images/twit.png" alt="RedesSocialesTwitImg" id="twit" height="50">
+                </a>
+            </div>
+    </div>
     </footer>   <!-- Fin de Barra inferior -->
 </body>
 </html>
