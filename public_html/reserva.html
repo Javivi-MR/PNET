@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./scripts/SeleccionFecha.js"></script>
+    <script src="./scripts/CambiarInfo.js"></script>
 </head>
 <body>
 
@@ -36,7 +38,7 @@
     <main>  <!-- Cuerpo de la pagina (añadir ultimas conferencias y porque nosotros) -->
         
         <div class="TituloDiv">
-            <h2>2. Introduce los datos para realizar la reserva:</h2>
+            <h2>Introduce los datos para realizar la reserva:</h2>
         </div>
         <div class="BloquePrincipalDiv">
             <div class="ImagenInfoDiv"> <!-- Div para la imagen e info-->
@@ -44,14 +46,14 @@
                     <img src="./images/sala1.jpg" alt="sala1img" id="ImagenSala">
                 </div>
                 <div class="TextoInfDiv">   <!-- Div para el texto inferior a la imagen -->
-                    <p>Sala alojada en la biblioteca Luis Berenguer, San Fernando.</p>
-                    <p>Aforo máximo: 10 personas.</p>
+                    <p id="inf1">Sala alojada en la biblioteca Luis Berenguer, San Fernando.</p>
+                    <p id="inf2">Aforo máximo: 10 personas.</p>
                     <p>Para mas informacion visite el espacio de <a href="./salas.html">Salas</a>.</p>
                 </div>
             </div>
             <div class="TituloFormularioDiv">     <!-- Div para el formulario -->
                 <div class="TituloFormDiv"> <!-- Div para el formulario y titulo de la sala -->
-                    <h3>Sala Skyline</h3>   <!-- Titulo de la sala -->
+                    <h3>Sala de estudios General Serrano</h3>   <!-- Titulo de la sala -->
                 </div>    
                 <div class="FormularioDiv">
                     <form action="reservado.html" method="get"> <!-- ¡CUIDADO! reservado.html está puesto como algo meramente ilustrativo, hay que preguntar que poner -->
@@ -73,7 +75,7 @@
                         </div>
                         <div class="InputDiv">
                             <label for="fecha">Fecha:</label>
-                            <input type="text" name="fecha" id="fecha" size="30" required>
+                            <input type="text" name="fecha" id="fecha" size="30" autocomplete="off" required>
                         </div>
                         <div class="InputDiv">
                             <label for="sala">Sala:</label>
