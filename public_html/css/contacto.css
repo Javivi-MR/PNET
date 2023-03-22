@@ -22,6 +22,7 @@ form {
     justify-content: center;
     margin-right: 1.5em;
     width: auto;
+    font-size: 1.2em;
 }
   
 form > div {
@@ -44,8 +45,8 @@ label {
 .FormularioInfoDiv{
     display: flex;
     flex-direction: column; 
-    font-size: 1.2em;
-    
+    align-items: center;
+    margin-bottom: 2em;
 }
 .FormularioDiv {
     display: flex;
@@ -55,6 +56,7 @@ label {
     justify-content: center;
     padding: 1em; /* Add padding to give some space around the content */
     width: fit-content;
+    
 }
 
 .InfoExtraDiv{
@@ -76,7 +78,7 @@ label {
 .form-submit-button{
 	background: #F1F1F1;
 	border-radius: 20px;
-    width: 10m;
+    width: 10em;
     height: 2em;
 }
 
@@ -98,5 +100,15 @@ label {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 2em;
+}
 
+#Mapa{
+    width: 30em;
+    height: 20em;
+}   
+
+h3{
+    text-align: center;
+    font-size: 1.17em;
 }
