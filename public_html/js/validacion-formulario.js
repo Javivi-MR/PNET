@@ -117,7 +117,7 @@ $(function ValidacionNumeroPersonas() {
         let numPersonasRaw = $(this).val()
         let numPersonas = parseInt(numPersonasRaw);
 
-        if  (!EsNumerico(numPersonasRaw) || numPersonas > maxPersonas) 
+        if(!EsNumerico(numPersonasRaw) || numPersonas > maxPersonas) 
         {
             alert("Se debe seleccionar un numero de personas entre 1 y " + maxPersonas);
             $(this).val(''); // Borrar el valor ingresado por el usuario
@@ -129,3 +129,16 @@ $(function ValidacionNumeroPersonas() {
         }
     });
 });
+
+/* Validacion de las horas de reserva 
+    
+    var checkboxes = document.querySelectorAll('.HorasDispDiv input[type="checkbox"]');
+    var checkboxesSeleccionados = []; // arreglo para mantener el registro de checkboxes seleccionados
+
+    for (var i = 0; i < checkboxes.length; i++) {
+    if (checkboxes[i].checked) {
+        checkboxesSeleccionados.push(checkboxes[i]);
+    }
+    }
+
+*/
