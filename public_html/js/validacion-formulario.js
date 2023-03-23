@@ -59,6 +59,10 @@ function HorasSeguidas()
         }
     }
 
+    if(valorSeleccionadas.length === 0)
+    {
+        return false;
+    }
 
 
     for (var i = 0; i < valorSeleccionadas.length - 1; i++)
