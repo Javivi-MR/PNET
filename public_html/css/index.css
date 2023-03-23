@@ -241,7 +241,6 @@ h3{
 .TextoNoticia{
     position: sticky;
     float: initial;
-    margin-left: 3em;
     background-color: bisque;
     border-radius: 1em;
     height: fit-content;
@@ -254,7 +253,6 @@ h3{
 .TextoNoticia2{
     position: sticky;
     float: initial;
-    margin-right: 3em;
     background-color: bisque;
     border-radius: 1em;
     height: fit-content;
