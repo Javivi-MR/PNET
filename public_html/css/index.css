@@ -202,3 +202,70 @@ h2{
 .DisponibilidadTexto{
     margin-right: 1em;
 }
+
+.CuerpoNoticias
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.Noticia{
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    align-items: center;
+    border: 2px solid #000;
+}
+
+.Noticia2{
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: end;
+    align-items: center;
+    border: 2px solid #000;
+}
+
+h3{
+    display:inline-block;
+}
+
+
+.ImagenNoticia{
+    width: 12em;
+    height: 12em;
+}
+
+.TextoNoticia{
+    position: sticky;
+    float: initial;
+    margin-left: 3em;
+    background-color: bisque;
+    border-radius: 1em;
+    height: fit-content;
+    padding-left: 1em;
+    padding-right: 1em;
+    display: table;
+    margin: 0 auto;
+}
+
+.TextoNoticia2{
+    position: sticky;
+    float: initial;
+    margin-right: 3em;
+    background-color: bisque;
+    border-radius: 1em;
+    height: fit-content;
+    padding-left: 1em;
+    padding-right: 1em;
+    display: table;
+    margin: 0 auto;
+}
+
+
+/* Estilos para pantallas con un ancho máximo de 768px */
+@media (max-width: 768px) {
+
+  }
