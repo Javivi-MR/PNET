@@ -1,7 +1,9 @@
+
+
 function EsAlfabetico(NombreApellido)
 {
     let expresionAlfabetica = /^[a-z]+\s?[a-z]*$/i;
-    return expresionAlfabetica.test(NombreApellido) && !NombreApellido.includes('\'') && !NombreApellido.includes('\"');
+    return expresionAlfabetica.test(NombreApellido);
 }
 
 function EsCorreo(Correo)
@@ -10,135 +12,134 @@ function EsCorreo(Correo)
     return expresionCorreo.test(Correo);
 }
 
-
-//funcion para validar numero telefonico
 function EsNumerico(Telefono)
 {
     let expresionTelefono = /^[0-9]+$/i;
     return expresionTelefono.test(Telefono);
 }
 
-function TieneCaracteresEsp(cadena)
+function AforoPermitido(numPersonas)
 {
-    //expresion regular de caracteres validos para un correo
-    return  !cadena.includes('\'') && !cadena.includes('\"');
+    let aforoMaximo = 0;
+    sala = document.getElementById('sala').value;
+    switch(sala)
+    {
+        case 'SalaDeEstudiosGeneralSerrano':
+            aforoMaximo = 10;
+            break;
+        case 'SalaDeEstudiosMaríaLeón':
+            aforoMaximo = 6;
+            break;
+        case 'SalaDeMeetingPoint':
+            aforoMaximo = 20;
+            break;
+    }
+
+    return numPersonas > 0 && numPersonas <= aforoMaximo;
 }
 
-$(function ValidacionNombre() //Comprobacion de que el usuario introduzca el nombre de forma correcta (Incluye espacio para nombre compuesto Ej: Francisco Javier)
-{    
-    $('#nombre').on('input', function() 
-    {
-        let nombre = $(this).val();
-        if (EsAlfabetico(nombre) || nombre === '') 
-        {
-            $(this).removeClass("error");
-        }
-        else
-        {
-            alert("El nombre solo admite caracteres alfabéticos (sin simbolos especiales como acentos)");
-            $(this).val(''); // Borrar el valor ingresado por el usuario
-            $(this).addClass("error"); // Agregar la clase CSS "error" al input
-        }
-    });
-});
-
-$(function ValidacionApellidos() //Comprobacion de que el usuario introduzca los apellidos de forma correcta
-{    
-    $('#apellidos').on('input', function() 
-    {
-        let apellidos = $(this).val();
-        if (EsAlfabetico(apellidos) || apellidos === '') 
-        {
-            $(this).removeClass("error");
-        }
-        else
-        {
-            alert("El nombre solo admite caracteres alfabéticos (sin simbolos especiales como acentos)");
-            $(this).val(''); // Borrar el valor ingresado por el usuario
-            $(this).addClass("error"); // Agregar la clase CSS "error" al input
-        }
-    });
-});
-
-$(function ValidacionCorreo() //Comprobacion de que el usuario introduzca el correo de forma correcta
+function HorasSeguidas()
 {
-    $('#correo').on('input', function()
+    let checkboxes = document.querySelectorAll('.HorasDispDiv input[type="checkbox"]');
+    let valorSeleccionadas = []; 
+    let horasSeguidas = true;
+
+    for (var i = 0; i < checkboxes.length; i++)
     {
-        let correo = $(this).val();
-        if (TieneCaracteresEsp(correo) || correo === '')
+        if (checkboxes[i].checked)
         {
-            $(this).removeClass("error");
+            valorSeleccionadas.push(parseInt(checkboxes[i].value));
         }
-        else
-        {
-            alert("El correo introducido no es valido");
-            $(this).val(''); // Borrar el valor ingresado por el usuario
-            $(this).addClass("error"); // Agregar la clase CSS "error" al input
-        }
-    });
-});
-
-$(function ValidacionTelefono() {    //Comprobacion de que el usuario introduzca el telefono movil de forma correcta
-    $('#telefono').on('input', function() 
-    {
-        let telefono = $(this).val();
-        if (EsNumerico(telefono) || telefono === '')
-        {
-            $(this).removeClass("error");
-        }
-        else
-        {
-            alert("El nombre solo admite caracteres alfabéticos (sin simbolos especiales como acentos)");
-            $(this).val(''); // Borrar el valor ingresado por el usuario
-            $(this).addClass("error"); // Agregar la clase CSS "error" al input
-        }
-    });
-});
-
-
-$(function ValidacionNumeroPersonas() {    
-    $('#NumPer').on('input', function() 
-    {
-        var opcionSeleccionada = $('#sala').val();
-        let maxPersonas = 0;
-        switch(opcionSeleccionada) 
-        {
-            case 'SalaDeEstudiosGeneralSerrano':
-                maxPersonas = 10;
-            break;
-            case 'SalaDeEstudiosMaríaLeón':
-                maxPersonas = 6;
-            break;
-            case 'SalaDeMeetingPoint':
-                maxPersonas = 20;
-            break;
-        }
-
-        let numPersonasRaw = $(this).val()
-        let numPersonas = parseInt(numPersonasRaw);
-
-        if(!EsNumerico(numPersonasRaw) || numPersonas > maxPersonas) 
-        {
-            alert("Se debe seleccionar un numero de personas entre 1 y " + maxPersonas);
-            $(this).val(''); // Borrar el valor ingresado por el usuario
-            $(this).addClass("error"); // Agregar la clase CSS "error" al input
-        }
-        else
-        {
-            $(this).removeClass("error")
-        }
-    });
-});
-
-/* Validacion de las horas de reserva 
-    
-    var checkboxes = document.querySelectorAll('.HorasDispDiv input[type="checkbox"]');
-    var checkboxesSeleccionados = []; // arreglo para mantener el registro de checkboxes seleccionados
-
-    for (var i = 0; i < checkboxes.length; i++) {
-    if (checkboxes[i].checked) {
-        checkboxesSeleccionados.push(checkboxes[i]);
-    }
     }
 
-*/
+
+
+    for (var i = 0; i < valorSeleccionadas.length - 1; i++)
+    {
+        if(valorSeleccionadas[i] + 1 != valorSeleccionadas[i+1])
+        {
+            horasSeguidas = false;
+        }
+    }
+    return horasSeguidas;
+}
+
+function DatosValidos()
+{
+    let nombre = document.getElementById('nombre').value;
+    let Apellido = document.getElementById('apellidos').value;
+    let correo = document.getElementById('correo').value;
+    let telefono = document.getElementById('telefono').value;
+    let numPersonas = parseInt(document.getElementById('NumPer').value);
+
+    let cadena = "";
+    let valido = true;
+
+    if(!EsAlfabetico(nombre))
+    {
+        cadena += "-> Los nombres solo acepta carácteres alfabéticos.\n\tIntroduzcalo correctamente y vuelva a enviar el formulario.\n\n";
+        document.getElementById('nombre').classList.add('error');
+        valido = false;
+    }
+    else
+    {
+        document.getElementById('nombre').classList.remove('error');
+    }
+
+    if(!EsAlfabetico(Apellido))
+    {
+        cadena += "-> Los apellidos solo acepta carácteres alfabéticos.\n\tIntroduzcalo correctamente y vuelva a enviar el formulario.\n\n";
+        document.getElementById('apellidos').classList.add('error');
+        valido = false;
+    }
+    else
+    {
+        document.getElementById('apellidos').classList.remove('error');
+    }
+
+
+    if(!EsCorreo(correo))
+    {
+        cadena += "-> El correo no es valido.\n\tIntroduzcalo correctamente y vuelva a enviar el formulario.\n\n";
+        document.getElementById('correo').classList.add('error');
+        valido = false;
+    }
+    else
+    {
+        document.getElementById('correo').classList.remove('error');
+    }
+
+    if(!EsNumerico(telefono) || telefono.length != 9)
+    {
+        cadena += "-> El telefono debe tener 9 numeros.\n\tIntroduzcalo correctamente y vuelva a enviar el formulario.\n\n";
+        document.getElementById('telefono').classList.add('error');
+        valido = false;
+    }
+    else
+    {
+        document.getElementById('telefono').classList.remove('error');
+    }
+
+    if(!AforoPermitido(numPersonas))
+    {
+        cadena += "-> El número de personas no es valido.\n\tIntroduzcalo correctamente y vuelva a enviar el formulario.\n\n";
+        document.getElementById('NumPer').classList.add('error');
+        valido = false;
+    }
+    else
+    {
+        document.getElementById('NumPer').classList.remove('error');
+    }
+
+    if(!HorasSeguidas())
+    {
+        cadena += "-> Se deben reservar las horas seguidamente.\n\tIntroduzca correctamente las horas y vuelva a enviar el formulario.\n\n";
+        valido = false;
+    }
+
+    if(!valido)
+    {
+        swal("Error,", cadena, "error");
+    }
+    return valido;
+}
