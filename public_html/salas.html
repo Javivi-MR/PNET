@@ -13,23 +13,22 @@
     <link rel="stylesheet" type="text/css" href="./css/salas.css">
 </head>
 <body>
-    
     <header id="Main-Header">  <!-- Encabezado de la pagina (Reservado para la barra de navegacion principal)-->
         <nav class="BarraNavDiv">
             <div class="ImagenLogoDiv">
-                <a href="./index.html"> <!-- Link para la imagen del logo -->
-                    <img src="./images/logoMM.png" alt="ImagenLogo" class="ImagenLogo" height="100">
+                <a href="./index.html" aria-label="Imagen del logo"> <!-- Link para la imagen del logo -->
+                    <img src="./images/logoMM.png" alt="Imagen del logo" class="ImagenLogo" height="100">
                 </a>
             </div>
             <div class="Titulo">
                 <h1>MindMeetings</h1>  <!-- Titulo de la barra de navegacion -->
             </div>
             
-            <ul class="ListaBarraNav">
-                <li> <a href="./index.html" class="ElementoBarraNav">Inicio</a></li> <!-- Opcion Inicio -->
-                <li> <a href="./salas.html" class="ElementoBarraNav">Salas</a></li>  <!-- Opcion Salas -->
-                <li> <a href="./reserva.html" class="ElementoBarraNav">Reservar</a></li> <!-- Opcion Reservar-->
-                <li> <a href="./contacto.html" class="ElementoBarraNav">Contacto</a></li> <!-- Opcion Contacto -->
+            <ul class="ListaBarraNav"> <!-- -Lista de opciones de la barra de navegacion -->
+                <li> <a href="./index.html" class="ElementoBarraNav" aria-label="Inicio">Inicio</a></li> <!-- Opcion Inicio -->
+                <li> <a href="./salas.html" class="ElementoBarraNav" aria-label="Salas">Salas</a></li>  <!-- Opcion Salas -->
+                <li> <a href="./reserva.html" class="ElementoBarraNav" aria-label="Reservar">Reservar</a></li> <!-- Opcion Reservar -->
+                <li> <a href="./contacto.html" class="ElementoBarraNav" aria-label="Contacto">Contacto</a></li> <!-- Opcion Contacto -->
             </ul>
         </nav>
     </header>   <!-- FIN Encabezado de la pagina -->
@@ -159,17 +158,17 @@
                 Síguenos en nuestras redes sociales
             </div>
             <div class="RedesSocialesImagenesDiv">
-                <a href="https://www.instagram.com/">   <!-- insta -->
+                <a href="https://www.instagram.com/" aria-label="Instagram">   <!-- insta -->
                     <img src="./images/insta.png" alt="RedesSocialesInstaImg" id="insta" height="50">
                 </a>
-                <a href="https://facebook.com/">        <!-- Face -->
+                <a href="https://facebook.com/" aria-label="Facebook">        <!-- Face -->
                     <img src="./images/face.png" alt="RedesSocialesFaceImg" id="face" height="50">
                 </a>
-                <a href="https://twitter.com/">         <!-- Twit -->
+                <a href="https://twitter.com/" aria-label="Twitter">         <!-- Twit -->
                     <img src="./images/twit.png" alt="RedesSocialesTwitImg" id="twit" height="50">
                 </a>
             </div>
-    </div>
+        </div>
     </footer>   <!-- Fin de Barra inferior -->
 
 </body>

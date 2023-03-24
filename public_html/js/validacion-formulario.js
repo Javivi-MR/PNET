@@ -83,14 +83,14 @@ function DatosValidos() //Funcion para validar los datos introducidos en el form
     let Apellido = document.getElementById('apellidos').value; //Obtenemos el valor del campo apellidos
     let correo = document.getElementById('correo').value;  //Obtenemos el valor del campo correo
     let telefono = document.getElementById('telefono').value; //Obtenemos el valor del campo telefono
-    let numPersonas = parseInt(document.getElementById('NumPer').value); //Obtenemos el valor del campo numero de personas
+    let numPersonas = document.getElementById('NumPer').value; //Obtenemos el valor del campo numero de personas
 
     let cadena = ""; //Variable que almacenará el mensaje de error
     let valido = true; //Variable que almacenará si los datos son validos
 
     if(!EsAlfabetico(nombre)) //Si el nombre no es valido
     {
-        cadena += "-> Los nombres solo acepta carácteres alfabéticos.\n\tIntroduzcalo correctamente y vuelva a enviar el formulario.\n\n"; //Añadimos el mensaje de error al mensaje de error
+        cadena += "-> Los nombres solo aceptan carácteres alfabéticos.\n\tIntroduzca correctamente el campo y vuelva a enviar el formulario.\n\n"; //Añadimos el mensaje de error al mensaje de error
         document.getElementById('nombre').classList.add('error'); //Añadimos la clase error al campo nombre
         valido = false; //Los datos no son validos
     }
@@ -102,7 +102,7 @@ function DatosValidos() //Funcion para validar los datos introducidos en el form
     // Similar a lo anterior
     if(!EsAlfabetico(Apellido))
     {
-        cadena += "-> Los apellidos solo acepta carácteres alfabéticos.\n\tIntroduzcalo correctamente y vuelva a enviar el formulario.\n\n";
+        cadena += "-> Los apellidos solo aceptan carácteres alfabéticos.\n\tIntroduzca correctamente el campo y vuelva a enviar el formulario.\n\n";
         document.getElementById('apellidos').classList.add('error');
         valido = false;
     }
@@ -114,7 +114,7 @@ function DatosValidos() //Funcion para validar los datos introducidos en el form
     // Similar a lo anterior
     if(!EsCorreo(correo))
     {
-        cadena += "-> El correo no es valido.\n\tIntroduzcalo correctamente y vuelva a enviar el formulario.\n\n";
+        cadena += "-> El correo no es valido.\n\tIntroduzcalo correctamente el campo y vuelva a enviar el formulario.\n\n";
         document.getElementById('correo').classList.add('error');
         valido = false;
     }
@@ -126,7 +126,7 @@ function DatosValidos() //Funcion para validar los datos introducidos en el form
     // Similar a lo anterior añadiendo la longitud del telefono
     if(!EsNumerico(telefono) || telefono.length != 9)
     {
-        cadena += "-> El telefono debe tener 9 numeros.\n\tIntroduzcalo correctamente y vuelva a enviar el formulario.\n\n";
+        cadena += "-> El teléfono debe tener 9 números.\n\tIntroduzcalo correctamente el campo y vuelva a enviar el formulario.\n\n";
         document.getElementById('telefono').classList.add('error');
         valido = false;
     }
@@ -136,9 +136,9 @@ function DatosValidos() //Funcion para validar los datos introducidos en el form
     }
 
     // Similar a lo anterior
-    if(!AforoPermitido(numPersonas))
+    if(!AforoPermitido(parseInt(numPersonas)) || !EsNumerico(numPersonas))
     {
-        cadena += "-> El número de personas no es valido.\n\tIntroduzcalo correctamente y vuelva a enviar el formulario.\n\n";
+        cadena += "-> El número de personas no es valido.\n\tIntroduzcalo correctamente el campo y vuelva a enviar el formulario.\n\n";
         document.getElementById('NumPer').classList.add('error');
         valido = false;
     }
@@ -175,7 +175,7 @@ function DatosValidosAyuda()
 
     if(!EsAlfabetico(nombre))
     {
-        cadena += "-> Los nombres solo acepta carácteres alfabéticos.\n\tIntroduzcalo correctamente y vuelva a enviar el formulario.\n\n";
+        cadena += "-> Los nombres solo aceptan carácteres alfabéticos.\n\tIntroduzca correctamente el campo y vuelva a enviar el formulario.\n\n";
         document.getElementById('nombre').classList.add('error');
         valido = false;
     }
@@ -186,7 +186,7 @@ function DatosValidosAyuda()
 
     if(!EsAlfabetico(Apellido))
     {
-        cadena += "-> Los apellidos solo acepta carácteres alfabéticos.\n\tIntroduzcalo correctamente y vuelva a enviar el formulario.\n\n";
+        cadena += "-> Los apellidos solo aceptan carácteres alfabéticos.\n\tIntroduzca correctamente el campo y vuelva a enviar el formulario.\n\n";
         document.getElementById('apellidos').classList.add('error');
         valido = false;
     }
@@ -198,7 +198,7 @@ function DatosValidosAyuda()
 
     if(!EsCorreo(correo))
     {
-        cadena += "-> El correo no es valido.\n\tIntroduzcalo correctamente y vuelva a enviar el formulario.\n\n";
+        cadena += "-> El correo no es valido.\n\tIntroduzcalo correctamente el campo y vuelva a enviar el formulario.\n\n";
         document.getElementById('correo').classList.add('error');
         valido = false;
     }
@@ -209,7 +209,7 @@ function DatosValidosAyuda()
 
     if(!EsNumerico(telefono) || telefono.length != 9)
     {
-        cadena += "-> El telefono debe tener 9 numeros.\n\tIntroduzcalo correctamente y vuelva a enviar el formulario.\n\n";
+        cadena += "-> El teléfono debe tener 9 números.\n\tIntroduzcalo correctamente el campo y vuelva a enviar el formulario.\n\n";
         document.getElementById('telefono').classList.add('error');
         valido = false;
     }
@@ -219,7 +219,7 @@ function DatosValidosAyuda()
     }
     if(!sinCaracteresEspeciales(problema))
     {
-        cadena += "-> El problema no puede tener carácteres especiales.\n\tIntroduzcalo correctamente y vuelva a enviar el formulario.\n\n";
+        cadena += "-> El problema no puede tener carácteres especiales.\n\tIntroduzca correctamente el campo y vuelva a enviar el formulario.\n\n";
         document.getElementById('problema').classList.add('error');
         valido = false;
     }

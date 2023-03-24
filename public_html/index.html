@@ -16,7 +16,7 @@
     <header id="Main-Header">  <!-- Encabezado de la pagina (Reservado para la barra de navegacion principal)-->
         <nav class="BarraNavDiv">
             <div class="ImagenLogoDiv">
-                <a href="./index.html"> <!-- Link para la imagen del logo -->
+                <a href="./index.html" aria-label="Imagen del logo"> <!-- Link para la imagen del logo -->
                     <img src="./images/logoMM.png" alt="Imagen del logo" class="ImagenLogo" height="100">
                 </a>
             </div>
@@ -25,10 +25,10 @@
             </div>
             
             <ul class="ListaBarraNav"> <!-- -Lista de opciones de la barra de navegacion -->
-                <li> <a href="./index.html" class="ElementoBarraNav">Inicio</a></li> <!-- Opcion Inicio -->
-                <li> <a href="./salas.html" class="ElementoBarraNav">Salas</a></li>  <!-- Opcion Salas -->
-                <li> <a href="./reserva.html" class="ElementoBarraNav">Reservar</a></li> <!-- Opcion Reservar -->
-                <li> <a href="./contacto.html" class="ElementoBarraNav">Contacto</a></li> <!-- Opcion Contacto -->
+                <li> <a href="./index.html" class="ElementoBarraNav" aria-label="Inicio">Inicio</a></li> <!-- Opcion Inicio -->
+                <li> <a href="./salas.html" class="ElementoBarraNav" aria-label="Salas">Salas</a></li>  <!-- Opcion Salas -->
+                <li> <a href="./reserva.html" class="ElementoBarraNav" aria-label="Reservar">Reservar</a></li> <!-- Opcion Reservar -->
+                <li> <a href="./contacto.html" class="ElementoBarraNav" aria-label="Contacto">Contacto</a></li> <!-- Opcion Contacto -->
             </ul>
         </nav>
     </header>   <!-- FIN Encabezado de la pagina -->
@@ -40,16 +40,16 @@
                     <h2>Reservar salas es ahora más fácil que nunca</h2>    <!-- Frase en la imagen de la sala 1-->
                 </div>
                 <div class="SeccionReservarDiv">  
-                    <a href="./salas.html" id="BotonReservar">Reservar una sala</a> <!-- link del "boton" de reservas-->
+                    <a href="./salas.html" id="BotonReservar" aria-label="Reservar Sala">Reservar una sala</a> <!-- link del "boton" de reservas-->
                 </div>
             </div>
         </div>
 
         <div class="InformacionAdicional">
             <div class="InfoSalaDiv"> <!-- div de ultimas conferencias -->
-                <article>  <!-- Tipo articulo -->
+                <section>  <!-- Seccion -->
                     <div class="TituloInfoSala">
-                        <h3>Nuestra sala más popular</h3>  <!-- titulo del articulo -->
+                        <h3>Nuestra sala más popular</h3>  <!-- titulo del Seccion -->
                     </div>
                     <div id="ImagenSalaDiv">
                         <img src="./images/sala2.jpeg" alt="Imagen segunda sala" id="ImagenSala">  <!-- Imagen de la sala2-->
@@ -61,15 +61,15 @@
                         Este último año la sala de estudios María León ha sido la sala más reservada por los usuarios de MindMeetings.
                     </div>
                     <div class="MasInfoDiv">   <!--  Espacio a mas informacion -->
-                        <a href="./salas.html" class="Referencias">+Info</a> 
+                        <a href="./salas.html" class="Referencias" aria-label="Salas">+Info</a> 
                     </div>
-                </article>
+                </section>
             </div>
 
             <div class="ValoresDiv">    <!-- Div para los valores de la empresa -->
-                <section>   <!-- Tipo articulo -->
+                <section>   <!-- Tipo Seccion -->
                     <div class="TituloValores">
-                        <h3>¿Por qué usar MindMeetings?</h3>    <!-- Titulo global -->
+                        <h3>¿Por qué usar MindMeetings?</h3>    <!-- Titulo Seccion -->
                     </div>
                     <div class="CompromisoDiv">  <!-- Div para el valor Compromiso -->
                         <div class="ImagenValoresDiv">
@@ -94,7 +94,6 @@
                         <div class="DisponibilidadTexto">   <!-- Div para el texto -->
                             Cancelación gratuita hasta 24 horas antes.  <!-- texto de Disponibilidad -->
                         </div>
-                        <p></p>
                     </div>
                 </section>
             </div>
@@ -111,7 +110,7 @@
                     <div class="TextoNoticia"> <!-- Div para el texto de la noticia 1 -->
                         <h4>Torneo de Mario Kart en sala de MeetingPoint</h4>
                         <p>En la sala de MeetingPoint se celebrará un torneo del juego Mario Kart el día 14/04/2023.</p>
-                        <p>Si desea saber más información haga click <a href="https://mariokarttour.com/es-ES" class="Referencias">aquí</a>.</p>
+                        <p>Si desea saber más información haga click <a href="https://mariokarttour.com/es-ES" class="Referencias" aria-label="Torneo Mario Kart">aquí</a>.</p>
                     </div>
                 </div>
                 <div class="Noticia2"> <!-- Div para la noticia 2 -->
@@ -121,7 +120,7 @@
                     <div class="TextoNoticia2"> <!-- Div para el texto de la noticia 2 -->
                         <h4>Taller de manualidades en la sala de estudios General Serrano</h4>
                         <p>En la sala de estudios General Serrano se celebrará un taller de manualidades el día 09/04/2023</p>
-                        <p>Si desea saber más información haga click <a href="https://www.youtube.com/watch?v=zza8hPNkVOU" class="Referencias">aquí</a>.</p>
+                        <p>Si desea saber más información haga click <a href="https://www.youtube.com/watch?v=zza8hPNkVOU" class="Referencias" aria-label="Taller Manualidades">aquí</a>.</p>
                     </div>
                 </div>
                 <div class="Noticia"> <!-- Div para la noticia 3 -->
@@ -129,9 +128,9 @@
                         <img src="./images/noticia3.jpeg" alt="Imagen noticia 3" class="ImagenNoticia">
                     </div>
                     <div class="TextoNoticia"> <!-- Div para el texto de la noticia 3 -->
-                        <h4>Firma del libro "Como aprobé POO" en la sala de estudios María León</h4>
+                        <h4>Firma del libro "Cómo aprobé POO" en la sala de estudios María León</h4>
                         <p>Francisco Javier Molina Rojas, autor de "Cómo aprobé POO", firmará su libro el día 21/04/2023</p>
-                        <p>Si desea saber más información haga click <a href="https://www.ayudauniversitaria.com/como-aprobar-sin-estudiar/" class="Referencias">aquí</a>.</p>
+                        <p>Si desea saber más información haga click <a href="https://www.ayudauniversitaria.com/como-aprobar-sin-estudiar/" class="Referencias" aria-label="Firma Libro">aquí</a>.</p>
                     </div>
                 </div>
 
@@ -142,7 +141,7 @@
     <footer id="footer"> <!-- Barra inferior (Para contacto y redes sociales) -->
         <div class="ContactoDiv">   <!-- Div para el contacto-->
             Teléfono: 626 47 18 22 <br>
-            Correo electrónico: <a href="mailto:contactoayuda@MindMeetings.com" id="CorreoContacto">contactoayuda@MindMeetings.com</a> <br> <!-- Correo de contacto con mailto -->
+            Correo electrónico: <a href="mailto:contactoayuda@MindMeetings.com" id="CorreoContacto" aria-label="Correo">contactoayuda@MindMeetings.com</a> <br> <!-- Correo de contacto con mailto -->
             Dirección: Av. Universidad de Cádiz, 10, 11519 Puerto Real, Cádiz
         </div>
 
@@ -155,17 +154,17 @@
                 Síguenos en nuestras redes sociales
             </div>
             <div class="RedesSocialesImagenesDiv">
-                <a href="https://www.instagram.com/">   <!-- insta -->
+                <a href="https://www.instagram.com/" aria-label="Instagram">   <!-- insta -->
                     <img src="./images/insta.png" alt="RedesSocialesInstaImg" id="insta" height="50">
                 </a>
-                <a href="https://facebook.com/">        <!-- Face -->
+                <a href="https://facebook.com/" aria-label="Facebook">        <!-- Face -->
                     <img src="./images/face.png" alt="RedesSocialesFaceImg" id="face" height="50">
                 </a>
-                <a href="https://twitter.com/">         <!-- Twit -->
+                <a href="https://twitter.com/" aria-label="Twitter">         <!-- Twit -->
                     <img src="./images/twit.png" alt="RedesSocialesTwitImg" id="twit" height="50">
                 </a>
             </div>
-    </div>
+        </div>
     </footer>   <!-- Fin de Barra inferior -->
 
 </body> <!-- FIN Cuerpo de la pagina (Parte visible) -->
