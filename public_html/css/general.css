@@ -39,7 +39,7 @@ header{
 h1{
     display: inline-flex;
     vertical-align: middle;
-    color: #F1F1F1;
+    color: #FFFFFF;
     font-size: 15mm;
 }
 
@@ -53,7 +53,7 @@ h1{
 }
 
 .ElementoBarraNav{
-    color: #F1F1F1;
+    color: #FFFFFF;
     margin-left: 20px;
     font-size: 6mm;
     font-weight: bold;
@@ -65,7 +65,7 @@ h1{
     background-color: #826982;
     display: flex;
     justify-content:space-between;
-    color: #F1F1F1;
+    color: #FFFFFF;
 }
 
 .ContactoDiv
@@ -113,7 +113,7 @@ h1{
 
 #CorreoContacto{
     display: contents;
-    color: #F1F1F1;
+    color: #FFFFFF;
 }
 
 /* Estilos para pantallas con un ancho máximo de 1220px */
