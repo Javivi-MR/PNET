@@ -44,9 +44,9 @@
         </div>
         <div class="BloquePrincipalDiv">
             <div class="FormularioInfoDiv">
-                <h3>Formulario para solicitar ayuda</h3>
+                <h3>Formulario para solicitar ayuda</h3> <!-- Titulo del formulario -->
                 <div class="FormularioDiv">
-                    <form action="ayudado.html" method="get" onsubmit="return DatosValidosAyuda()"> <!-- ¡CUIDADO! ayudado.html está puesto como algo meramente ilustrativo, hay que preguntar que poner -->
+                    <form action="#" method="get" onsubmit="return DatosValidosAyuda()"> <!-- Formulario para introducir datos -->
                         <div class="InputDiv">
                             <label for="nombre">Nombre:</label>
                             <input type="text" name="nombre" id="nombre" size="30" required> <!-- Introducir Nombre -->
@@ -76,18 +76,18 @@
                         *Al pulsar el boton de “Recibir ayuda” acepta los terminos y condiciones de la página, además del tratamiento de sus datos. <p></p>
                 </div>
             </div>
-            <div class="MapaDiv">
+            <div class="MapaDiv">  <!-- Div para el mapa de google -->
                 <h3>¿Donde puedes encontrarnos?</h3>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1031.83714024638!2d-6.201246048616711!3d36.53763238191367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x152f79854b8f0de1%3A0x8d075bd9e5895558!2sEscuela%20Superior%20de%20Ingenier%C3%ADa!5e0!3m2!1ses!2ses!4v1679398858857!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="Mapa"></iframe>
             </div>
         </div>
         <div class="BloqueSecundarioDiv">
 
-            <div class="VideoDiv">
+            <div class="VideoDiv"> <!-- Div para el video de youtube -->
                 <h3>Conoce nuestras instalaciones</h3>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/ByuvYCd-Wfo" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div class="AcercaDeDiv">
+            <div class="AcercaDeDiv"> <!-- Div para la informacion de la web -->
                 <h3>Acerca de MindMeetings</h3>
                 <p>MindMeetings nace por la necesidad de reservar salas juveniles telemáticamente.</p>
                 <p>Al no existir ningun tipo de sistema de reservas, MindMeetings propone su sistema de reserva.</p>
@@ -102,7 +102,7 @@
     <footer id="footer"> <!-- Barra inferior (Para contacto y redes sociales) -->
         <div class="ContactoDiv">   <!-- Div para el contacto-->
             Telefono: 626 47 18 22 <br>
-            Correo electrónico: contactoayuda@MindMeetings.com <br>
+            Correo electrónico: <a href="mailto:contactoayuda@MindMeetings.com" id="CorreoContacto">contactoayuda@MindMeetings.com</a><br> <!-- Correo de contacto con mailto -->
             Direccion: Av. Universidad de Cádiz, 10, 11519 Puerto Real, Cádiz
         </div>
 

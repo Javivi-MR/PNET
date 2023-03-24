@@ -1,11 +1,16 @@
-/* sustituir los pixeles por em */  
+/* Codigo correspondiente al header*/
 body{
     margin: 0;
 }
 
+header{
+    position: sticky;
+    top: 0;
+}
+
 .BarraNavDiv{
-    background-color: #DDA0DD;  /* Color del fondo */
-    display: flex; /* display flexible */
+    background-color: #826982;  
+    display: flex; 
     height: 7em;
 }
 
@@ -17,8 +22,8 @@ body{
 
 .ImagenLogo
 {
-    display: inline-block; /* Situamos el logo en linea con un bloque */
-    width: auto; /* ancho automático */
+    display: inline-block; 
+    width: auto; 
 }
 
 .Titulo{
@@ -52,13 +57,14 @@ h1{
     margin-left: 20px;
     font-size: 6mm;
 }
-/* Codigo correspondiente al header*/
+
 
 /* Codigo correspondiente al footer*/
 #footer{
-    background-color: #DDA0DD;
+    background-color: #826982;
     display: flex;
     justify-content:space-between;
+    color: #F1F1F1;
 }
 
 .ContactoDiv
@@ -100,4 +106,24 @@ h1{
 
 #twit{
     margin-left: 2em;
+}
+
+#CorreoContacto{
+    display: contents;
+    color: #F1F1F1;
+}
+
+/* Estilos para pantallas con un ancho máximo de 1220px */
+@media (max-width: 1220px) {
+    header{
+        width: 76.25em;
+    }
+
+    main{
+        width: 76.25em;
+    }
+
+    footer{
+        width: 76.25em;
+    }
 }

@@ -1,9 +1,13 @@
+/* Titulo superior */
+
 .TituloDiv{
     display: flex;
     margin-top: 1em;
     margin-bottom: 1em;
     margin-left: 2em;
 }
+
+/* Muestra de Sala 1/3 */
 
 .apartado1{
     display: flex;
@@ -19,7 +23,7 @@
     margin-right: 5em;
 }
 
-#sala1{
+.salaimg{
     width: 50em;
     height: 30em;
 }
@@ -52,6 +56,8 @@ h2{
     color: #000000;
 }
 
+/* Muestra de Sala 2 */
+
 .apartado2{
     display: flex;
     flex-direction: row-reverse;
@@ -67,23 +73,20 @@ h2{
     margin-right: 2em;
 }
 
-#sala2{
-    width: 50em;
-    height: 30em;
-}
-
 .Texto2Div{
     display : block;
     margin-left: 5em;
     text-align: center;
 }
 
+/* Tablas*/
+
 table {
     table-layout: fixed;
     width: 100%;
     border-collapse: collapse;
     border: 2px solid #000;
-  }
+}
   
 tr{
     padding: 20px;
@@ -93,7 +96,7 @@ tr{
 th{
     padding: 20px;
     border: 2px solid #000;
-    background-color: antiquewhite;
+    background-color: #fffcbf;
 }
 
 td{
@@ -101,7 +104,10 @@ td{
     border: 2px solid #000;
 }
 
-#sala3{
-    width: 50em;
-    height: 30em;
+/* Estilos para pantallas con un ancho máximo de 1220px */
+@media (max-width: 1220px) {
+    .salaimg{
+        width: 20em;
+        height: 10em;
+    }
 }

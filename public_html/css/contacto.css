@@ -1,3 +1,5 @@
+/* Titulo superior */
+
 h2{
     font-size: 2em;
     text-decoration: underline;
@@ -6,6 +8,8 @@ h2{
     margin-bottom: 2em;
     margin-left: 1em;
 }
+
+/* Bloque prinicipal (formulario + mapa) */
 
 .BloquePrincipalDiv
 {
@@ -28,14 +32,14 @@ form {
 form > div {
     display: flex;
     align-items: center;
-    margin-bottom: 10px; /* Puedes ajustar el valor según sea necesario */
+    margin-bottom: 10px; 
     margin-right: 20px;
 }
   
 label {
-    width: 100px; /* Puedes ajustar el valor según sea necesario */
+    width: 100px;
     text-align: right;
-    margin-right: 10px; /* Puedes ajustar el valor según sea necesario */
+    margin-right: 10px; 
 }
 
 #problema{
@@ -50,11 +54,11 @@ label {
 }
 .FormularioDiv {
     display: flex;
-    background-color: bisque;
+    background-color: #fffcbf;
     border-radius: 1em;
     align-items: center;
     justify-content: center;
-    padding: 1em; /* Add padding to give some space around the content */
+    padding: 1em; 
     width: fit-content;
     
 }
@@ -66,32 +70,11 @@ label {
     width: 23em;
 }
 
-.ImagenContactoDiv{
-    display: flex;
-}
-
-#agente{
-    width: 20em;
-    height: 20em;
-}
-
 .form-submit-button{
 	background: #F1F1F1;
 	border-radius: 20px;
     width: 10em;
     height: 2em;
-}
-
-.BloqueSecundarioDiv
-{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 1em;
-    justify-content: space-around;
-    
 }
 
 .MapaDiv
@@ -106,7 +89,21 @@ label {
 #Mapa{
     width: 30em;
     height: 20em;
-}   
+} 
+
+/* Bloque secundario (Video + acerca de) */
+
+.BloqueSecundarioDiv
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    justify-content: space-around;
+    
+}
 
 h3{
     text-align: center;
@@ -125,6 +122,8 @@ h3{
 #masInfo{
     color: #000000;
 }
+
+/* Si hay un error */
 
 .error {
     background-color: #ff7d7d7d;

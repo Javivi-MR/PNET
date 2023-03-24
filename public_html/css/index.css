@@ -1,8 +1,9 @@
+ /* Bloque principal (fondo imagen + titulos y boton de reserva tu sala)*/
 .ReservaTuSalaDiv {
     background-image: url("../images/sala1.jpeg");
     background-position: center;
     background-size: cover;
-    height: 45em; /* ajusta la altura según tus necesidades */
+    height: 45em; 
     display: flex;
     align-items: center;
 }
@@ -21,7 +22,6 @@
     margin-top: 3em;
     align-items: center;
 }
-
 
 h2{
     color: #F1F1F1;
@@ -52,12 +52,14 @@ h2{
     flex-direction: row;
 }
 
-.UltCursosDiv{
+/* Informacion acerca de sala especifica */
+
+.InfoSalaDiv{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 50%;
-    background-color: #F5F0CD;
+    background-color: #fffcbf;
     margin-top: 3em;
     margin-bottom: 3em;
     margin-left: 3em;
@@ -66,26 +68,26 @@ h2{
 }   
 
 
-.TituloUltCursos{
+.TituloInfoSala{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.ImagenCursoDiv{
+.ImagenSalaDiv{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#ImagenCurso{
+#ImagenSala{
     height: 40%;
     width: 40%;
     display: block;
     margin: auto;
 }
 
-.ContenidoCursoDiv{
+.ContenidoSala{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -100,6 +102,8 @@ h2{
     justify-content: center;
     margin-bottom: 2em;
 }
+
+/* Espacio para valores */
 
 .ValoresDiv{
     display: flex;
@@ -127,7 +131,7 @@ h2{
 }
 
 .ImagenValoresDiv{
-    background-color: #F5F0CD;
+    background-color: #fffcbf;
     border-radius: 1em;
     display: flex;
     align-items: center;
@@ -154,7 +158,7 @@ h2{
 }
 
 .ImagenRentabilidadDiv{
-    background-color: #F5F0CD;
+    background-color: #fffcbf;
     border-radius: 1em;
     display: flex;
     align-items: center;
@@ -182,7 +186,7 @@ h2{
 }
 
 .ImagenDisponibilidadDiv{
-    background-color: #F5F0CD;
+    background-color: #fffcbf;
     border-radius: 1em;
     display: flex;
     align-items: center;
@@ -203,6 +207,7 @@ h2{
     margin-right: 1em;
 }
 
+/* Apartado de noticias */
 .CuerpoNoticias
 {
     display: flex;
@@ -217,7 +222,6 @@ h2{
     flex-direction: row;
     text-align: start;
     align-items: center;
-    border: 2px solid #000;
 }
 
 .Noticia2{
@@ -225,7 +229,6 @@ h2{
     flex-direction: row-reverse;
     text-align: end;
     align-items: center;
-    border: 2px solid #000;
 }
 
 h3{
@@ -239,31 +242,21 @@ h3{
 }
 
 .TextoNoticia{
-    position: sticky;
     float: initial;
-    background-color: bisque;
+    background-color: #fffcbf;
     border-radius: 1em;
     height: fit-content;
     padding-left: 1em;
     padding-right: 1em;
-    display: table;
-    margin: 0 auto;
+    margin-left: 3em;
 }
 
 .TextoNoticia2{
-    position: sticky;
     float: initial;
-    background-color: bisque;
+    background-color: #fffcbf;
     border-radius: 1em;
     height: fit-content;
     padding-left: 1em;
     padding-right: 1em;
-    display: table;
-    margin: 0 auto;
+    margin-right: 3em;
 }
-
-
-/* Estilos para pantallas con un ancho máximo de 768px */
-@media (max-width: 768px) {
-
-  }

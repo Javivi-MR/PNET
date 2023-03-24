@@ -8,7 +8,7 @@
     <meta name="description" content="Mindmeetings es la web con la que podras realizar reserva para salas de estudio, recreo...">
     <meta name="keywords" content="Reserva, salas, estudio, recreo, reuniones, conferencias, cursos, eventos">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seleccione la sala de su gusto</title>
+    <title> Salas disponibles </title>
     <link rel="stylesheet" type="text/css" href="./css/general.css">
     <link rel="stylesheet" type="text/css" href="./css/salas.css">
 </head>
@@ -42,7 +42,7 @@
         <article>
             <div class="apartado1">
                 <div class="Imagenes1Div">  <!-- Div para imagen lado izquierdo (1) -->
-                    <img src="./images/sala1.jpeg" alt="sala1img" id="sala1">
+                    <img src="./images/sala1.jpeg" alt="sala1img" class="salaimg">
                 </div>
                 <div class="Texto1Div">     <!-- Div para el texto correspondiente a la imagen 1 -->
                     <h2>Sala de estudios General Serrano</h2>   <!-- Titulo de la sala -->
@@ -50,7 +50,7 @@
                         <p>Sala alojada en la biblioteca Luis Berenguer, San Fernando.</p>
                         <p>Aforo máximo: 10 personas.</p>
                         <p>La sala está equipada con:</p>
-                        <table class="tabla"> 
+                        <table class="tabla">  <!-- Tabla para los servicios de la sala -->
                             <tr>
                                 <th>Servicio</th>
                                 <th>Descripción</th>
@@ -76,7 +76,7 @@
         <article>
             <div class="apartado2">
                 <div class="Imagenes2Div">  <!-- Div para imagen lado derecho (2) -->
-                    <img src="./images/sala2.jpeg" alt="sala2img" id="sala2">
+                    <img src="./images/sala2.jpeg" alt="sala2img" class="salaimg">
                 </div>
                 <div class="Texto2Div">     <!-- Div para el texto correspondiente a la imagen 2 -->
                     <h2>Sala de estudios María León</h2>     <!-- Titulo de la sala -->
@@ -84,7 +84,7 @@
                         <p>Sala alojada en la Biblioteca Pública Municipal, El Puerto de Santa María</p>
                         <p>Aforo máximo: 6 personas. </p>
                         <p>La sala está equipada con:</p>
-                        <table class="tabla"> 
+                        <table class="tabla">  <!-- Tabla para los servicios de la sala -->
                             <tr>
                                 <th>Servicio</th>
                                 <th>Descripción</th>
@@ -110,7 +110,7 @@
         <article>
             <div class="apartado1">
                 <div class="Imagenes1Div">  <!-- Div para imagen lado izquierdo (1) -->
-                    <img src="./images/sala3.jpeg" alt="sala3img" id="sala3">
+                    <img src="./images/sala3.jpeg" alt="sala3img" class="salaimg">
                 </div>
                 <div class="Texto1Div">     <!-- Div para el texto correspondiente a la imagen 1 -->
                     <h2>Sala de MeetingPoint</h2>   <!-- Titulo de la sala -->
@@ -118,7 +118,7 @@
                         <p>Sala alojada en el edificio de la juventud, Cádiz.</p>
                         <p>Aforo máximo: 20 personas.</p>
                         <p>La sala está equipada con:</p>
-                        <table class="tabla"> 
+                        <table class="tabla">  <!-- Tabla para los servicios de la sala -->
                             <tr>
                                 <th>Servicio</th>
                                 <th>Descripción</th>
@@ -146,7 +146,7 @@
     <footer id="footer"> <!-- Barra inferior (Para contacto y redes sociales) -->
         <div class="ContactoDiv">   <!-- Div para el contacto-->
             Telefono: 626 47 18 22 <br>
-            Correo electrónico: contactoayuda@MindMeetings.com <br>
+            Correo electrónico: <a href="mailto:contactoayuda@MindMeetings.com" id="CorreoContacto">contactoayuda@MindMeetings.com</a> <br> <!-- Correo de contacto con mailto -->
             Direccion: Av. Universidad de Cádiz, 10, 11519 Puerto Real, Cádiz
         </div>
 

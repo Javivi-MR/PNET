@@ -1,3 +1,5 @@
+/* Titulo superior */
+
 .TituloDiv{
     display: flex;
     margin-top: 1em;
@@ -10,6 +12,8 @@ h2{
     text-decoration: underline;
     color: #000000;
 }
+
+/* Bloque prinicipal (imagen + formulario) */
 
 .BloquePrincipalDiv{
     display: flex;
@@ -37,6 +41,7 @@ h2{
     align-items: center;
     justify-content: center;
     font-size: 1.2em;
+    text-align: center
 }
 
 .TituloFormularioDiv{
@@ -58,7 +63,7 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: bisque;
+    background-color: #fffcbf;
     width: 22em;
     border-radius: 1em;
     height: 23em;
@@ -76,13 +81,13 @@ form {
 form > div {
     display: flex;
     align-items: center;
-    margin-bottom: 10px; /* Puedes ajustar el valor según sea necesario */
+    margin-bottom: 10px; 
 }
   
 label {
-    width: 100px; /* Puedes ajustar el valor según sea necesario */
+    width: 100px; 
     text-align: right;
-    margin-right: 10px; /* Puedes ajustar el valor según sea necesario */
+    margin-right: 10px; 
 }
 
 .HorasDispDiv{
@@ -104,6 +109,16 @@ label {
     height: 2em;
 }
 
+/* Si hay un error */
+
 .error {
     background-color: #ff7d7d7d;
+}
+
+/* Estilos para pantallas con un ancho máximo de 1400px */
+@media (max-width: 1400px) {
+    #ImagenSala{
+        width: 25em;
+        height: 15em;
+    }
 }

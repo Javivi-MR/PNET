@@ -81,14 +81,14 @@
                         </div>
                         <div class="InputDiv">
                             <label for="fecha">Fecha:</label>
-                            <input type="text" name="fecha" id="fecha" size="30" autocomplete="off" required>
+                            <input type="text" name="fecha" id="fecha" size="30" autocomplete="off" required> <!-- Introducir fecha -->
                         </div>
                         <div class="InputDiv">
                             <label for="NumPer">Numero de personas:</label>
-                            <input type="text" name="NumPer" id="NumPer" size="30" required>
+                            <input type="text" name="NumPer" id="NumPer" size="30" required> <!-- Introducir numero de personas -->
                         </div>
                         <div class="InputDiv">
-                            <label for="sala">Sala:</label>
+                            <label for="sala">Sala:</label> <!-- Introducir sala -->
                             <select id="sala" name="sala" oninput="return cambiarInfoSala()">
                                 <option value="SalaDeEstudiosGeneralSerrano">Sala de estudios General Serrano</option>
                                 <option value="SalaDeEstudiosMaríaLeón">Sala de estudios María León</option>
@@ -120,7 +120,7 @@
                                 <input type="checkbox" name="h5" id="h5" value="5">      
                             </div>        
                         </div>
-                        <label for="enviar"></label>
+                        <label for="enviar"></label>   <!-- Boton de enviar -->
                         <input type="submit" name="Enviar" id="enviar" value="Reservar sala" class="form-submit-button">  <!-- Introducir boton de enviar -->
                     </form>
                 </div>
@@ -133,7 +133,7 @@
     <footer id="footer"> <!-- Barra inferior (Para contacto y redes sociales) -->
         <div class="ContactoDiv">   <!-- Div para el contacto-->
             Telefono: 626 47 18 22 <br>
-            Correo electrónico: contactoayuda@MindMeetings.com <br>
+            Correo electrónico: <a href="mailto:contactoayuda@MindMeetings.com" id="CorreoContacto">contactoayuda@MindMeetings.com</a> <br> <!-- Correo de contacto con mailto -->
             Direccion: Av. Universidad de Cádiz, 10, 11519 Puerto Real, Cádiz
         </div>
 
