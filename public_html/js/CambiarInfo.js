@@ -18,7 +18,7 @@ function cambiarInfoSala() {    // Función que cambia la información de la sal
         break;
         case 'SalaDeMeetingPoint':
             document.getElementById("ImagenSala").src = "./images/sala3.jpeg";
-            document.getElementById("inf1").innerHTML = "Sala alojada en el edificio de la juventud, Cádiz.";
+            document.getElementById("inf1").innerHTML = "Sala alojada en la Casa de la Juventud, Cádiz.";
             document.getElementById("inf2").innerHTML = "Aforo máximo: 20 personas.";
             document.getElementById("TituloSala").innerHTML = "Sala de MeetingPoint";
         break;
