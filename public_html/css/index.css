@@ -265,3 +265,21 @@ h3{
 .Referencias{
     color: #000000;
 }
+
+#Summary{
+    background-color: #fffcbf;
+    border-radius: 1em;
+    margin-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: fit-content;
+    display: initial;
+}
+
+#TextoVerNoticia{
+    text-decoration: underline;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
