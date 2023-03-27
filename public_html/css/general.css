@@ -9,7 +9,7 @@ header{
 }
 
 .BarraNavDiv{
-    background-color: #826982;  
+    background-color: #5D4B5D;  
     display: flex; 
     height: 7em;
 }
@@ -62,7 +62,7 @@ h1{
 
 /* Codigo correspondiente al footer*/
 #footer{
-    background-color: #826982;
+    background-color: #5D4B5D;
     display: flex;
     justify-content:space-between;
     color: #FFFFFF;
