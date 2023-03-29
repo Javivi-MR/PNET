@@ -16,7 +16,7 @@ app.use(cors());
 
 const salasService = require('./routes/salas-service');
 const salas = require('./routes/salas');
-app.use('/salas', salas);
+app.use('/salasReserva', salas);
 
 const server = http.createServer(app);
 
