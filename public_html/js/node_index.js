@@ -14,15 +14,15 @@ app.use(express.urlencoded({
 app.use(logger('dev'));
 app.use(cors());
 
-const moviesService = require('./routes/movies-service');
-const movies = require('./routes/movies');
-app.use('/movies', movies);
+const salasService = require('./routes/salas-service');
+const salas = require('./routes/salas');
+app.use('/salas', salas);
 
 const server = http.createServer(app);
 
-moviesService.connectDb(function (err) {
+salasService.connectDb(function (err) {
     if (err) {
-        console.log('Could not connect with MongoDB – moviesService');
+        console.log('Could not connect with MongoDB - salasService');
         process.exit(1);
     }
 
