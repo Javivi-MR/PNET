@@ -4,23 +4,7 @@ const express = require('express');
 const router = express.Router();
 const salasService = require('./salas-service');
 
-router.get('/', function (req, res) {
-    salasService.getAll((err, salas) => {
-            if (err) {
-                res.status(500).send({
-                    msg: err
-                });
-            } else if (salas.length == 0){
-            	res.status(500).send({
-                    msg: "salas null"
-                });
-            } else {
-                res.status(200).send(salas);
-            }
-        }
-    );
-});
-
+//Crear una nueva sala
 router.post('/', function (req, res) {
     let salas = req.body;
     salasService.add(salas, (err, salas) => {
@@ -30,29 +14,32 @@ router.post('/', function (req, res) {
                 });
             } else if (salas.length != 0){
                 res.status(201).send({
-                    msg: 'salas created!'
+                    msg: 'Se ha creado la sala'
                 });
             }
         }
     );
 });
 
-
-router.delete('/', function (req, res) {
-    salasService.removeAll((err) => {
-        if (err) {
-            res.status(500).send({
-                msg: err
-            });
-        } else {
-            res.status(200).send({
-                msg: 'salas deleted!'
-            });
+//Recoger todas las salas
+router.get('/', function (req, res) {
+    salasService.getAll((err, salas) => {
+            if (err) {
+                res.status(500).send({
+                    msg: err
+                });
+            } else if (salas.length == 0){
+            	res.status(500).send({
+                    msg: "No existe ninguna sala"
+                });
+            } else {
+                res.status(200).send(salas);
+            }
         }
-    });
+    );
 });
 
-
+//Recoger una sala especifica
 router.get('/:_id', function (req, res) {
     let _id = req.params._id;
     salasService.get(_id, (err, salas) => {
@@ -71,7 +58,7 @@ router.get('/:_id', function (req, res) {
     );
 });
 
-
+//Actualizar una sala especifica
 router.put('/:_id', function (req, res) {
     const _id = req.params._id;
     const updatedsalas = req.body;
@@ -92,6 +79,7 @@ router.put('/:_id', function (req, res) {
     });
 });
 
+//Eliminar una sala especifica
 router.delete('/:_id', function (req, res) {
     let _id = req.params._id;
     salasService.remove(_id, (err) => {
@@ -107,7 +95,7 @@ router.delete('/:_id', function (req, res) {
     });
 });
 
-//function for delete all salas
+//Eliminar todas las salas
 router.delete('/', function (req, res) {
     salasService.removeAll((err) => {
         if (err) {
@@ -116,7 +104,7 @@ router.delete('/', function (req, res) {
             });
         } else {
             res.status(200).send({
-                msg: 'salas deleted!'
+                msg: 'Se han eliminado todas las salas'
             });
         }
     });
