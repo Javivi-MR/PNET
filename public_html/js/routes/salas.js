@@ -42,6 +42,7 @@ router.get('/', function (req, res) {
 //Recoger una sala especifica
 router.get('/:_id', function (req, res) {
     let _id = req.params._id;
+    console.log(_id);
     salasService.get(_id, (err, salas) => {
             if (err) {
                 res.status(500).send({

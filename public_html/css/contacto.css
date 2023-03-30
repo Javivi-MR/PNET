@@ -128,3 +128,8 @@ h3{
 .error {
     background-color: #ff7d7d7d;
   }
+
+#secret{
+    color: #F1F1F1;
+    display: contents;   
+}

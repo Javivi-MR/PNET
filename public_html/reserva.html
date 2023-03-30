@@ -18,6 +18,7 @@
     <script src="./js/CambiarInfo.js"></script>
     <script src="./js/validacion-formulario.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./js/validations_post.js"></script>
 </head>
 <body>
     <header id="Main-Header">  <!-- Encabezado de la pagina (Reservado para la barra de navegacion principal)-->
@@ -60,7 +61,7 @@
                     <h3 id="TituloSala">Sala de estudios General Serrano</h3>   <!-- Titulo de la sala -->
                 </div>    
                 <div class="FormularioDiv">
-                    <form action="#" method="get" id="formulario" onsubmit="return DatosValidos()"> <!-- ¡CUIDADO! reservado.html está puesto como algo meramente ilustrativo, hay que preguntar que poner -->
+                    <form action="./reserva.html" method="post" id="formulario" onsubmit="return DatosValidos()">
                         <div class="InputDiv">
                             <label for="nombre">Nombre:</label>
                             <input type="text" name="nombre" size="30" id="nombre" required> <!-- Introducir Nombre -->
@@ -116,9 +117,10 @@
                             <div class="HoraDiv5">
                                 <label for="h5">16:00h - 17:00h</label>
                                 <input type="checkbox" name="h5" id="h5" value="5">      
-                            </div>        
+                            </div>       
                         </div>
-                        <input type="submit" name="Enviar" id="enviar" value="Reservar sala" class="form-submit-button">  <!-- Introducir boton de enviar -->
+                        <input type="button" name="Enviar" id="enviar" value="Reservar sala" class="form-submit-button">  <!-- Introducir boton de enviar -->
+                        <div id="Resultado"></div>
                     </form>
                 </div>
                 <!--informacion acerca de los datos -->
