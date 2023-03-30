@@ -28,8 +28,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 break;
         }
 
-        let checks = document.querySelectorAll('input[name=checkboxes]:checked');
+        let checks = document.querySelectorAll('.HorasDispDiv input[type="checkbox"]');
         let horas = [];
+        console.log(checks);
         for(let i = 0; i < checks.length; i++)
         {
             switch(checks[i].value)

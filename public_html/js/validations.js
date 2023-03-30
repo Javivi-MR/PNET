@@ -13,7 +13,21 @@ function getAllReservas() {
         dataType: "json",
         url: myUrl,
         success: function(data) {
-	    	$("#Resultado").html(JSON.stringify(data));
+            let item = [];
+	    	for(let i = 0; i < data.length; i++)
+            {
+                $("#Resultado").append("<p>----Reserva: " + (i+1) + "----</p>");
+                item = data[i];
+                $("#Resultado").append("<p>Nombre: " + item.Nombre + "</p>");
+                $("#Resultado").append("<p>Apellidos: " + item.Apellidos + "</p>");
+                $("#Resultado").append("<p>Telefono: " + item.Telefono + "</p>");
+                $("#Resultado").append("<p>Correo: " + item.Correo + "</p>");
+                $("#Resultado").append("<p>Fecha: " + item.Fecha + "</p>");
+                $("#Resultado").append("<p>Numero de personas: " + item.NumPersonas + "</p>");
+                $("#Resultado").append("<p>Sala: " + item.Sala + "</p>");
+                $("#Resultado").append("<p>Horas: " + item.Horas + "</p>");
+                $("#Resultado").append("<p>--------------------</p>");
+            }
         },
         error: function(res) {
             alert("ERROR " + res.statusText);
