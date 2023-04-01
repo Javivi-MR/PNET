@@ -1,0 +1,31 @@
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+.operacion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.button{
+    margin-left: 2em;
+    height: 2em;
+}
+
+.data{
+    margin-left: 2em;
+}
+
+.InfoExtra{
+    margin-left: 2em;
+}
+
+.datos{
+    display: flex;
+    flex-direction: column;
+}

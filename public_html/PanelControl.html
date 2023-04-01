@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panel de Control</title>
+    <link rel="stylesheet" type="text/css" href="./css/PanelControl.css">
     <script src="./js/validations.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -13,33 +14,50 @@
 <body>
     <h1>Bienvenido al panel de control del administrador</h1>
     <h2>¿Qué desea hacer?</h2>
-    <input type="button" value="Ver todas las reservas" id="VerTodasRes"/> <br> <br>
-    <input type="button" value="Eliminar todas las reservas" id="EliminarTodasRes"/> <br> <br>
-    Inserte el id de la reserva que desea consultar:
-    <input type="text" id="ReservaId" autocomplete="off"/>
-    <input type="button" value="Ver reserva a partir de id" id="VerRes"/> <br> <br>
-    Inserte el id de la reserva que desea eliminar:
-    <input type="text" id="ReservaIdEliminar" autocomplete="off"/>
-    <input type="button" value="Eliminar reserva a partir de id" id="EliminarRes"/> <br> <br>
-    Inserte los datos que desea modificar de la reserva: <br>
-    Id: <input type="text" id="ReservaIdActualizar" autocomplete="off"/>
-    Nombre: <input type="text" id="ReservaNombreModificar" autocomplete="off"/>
-    Apellidos: <input type="text" id="ReservaApellidosModificar" autocomplete="off"/>
-    Correo: <input type="text" id="ReservaEmailModificar" autocomplete="off"/>
-    telefono: <input type="text" id="ReservaTelefonoModificar" autocomplete="off"/>
-    Fecha: <input type="text" name="fecha" id="fecha" autocomplete="off" required> <br>
-    Numero de personas: <input type="number" id="ReservaNumPersonasModificar" autocomplete="off"/> 
-    Sala: <select id="ReservaSalaModificar" name="sala">
-        <option value="SalaDeEstudiosGeneralSerrano">Sala de estudios General Serrano</option>
-        <option value="SalaDeEstudiosMaríaLeón">Sala de estudios María León</option>
-        <option value="SalaDeMeetingPoint">Sala de MeetingPoint</option>
-    </select><br>
-    Horas:<label for="h1">10:00h - 11:00h</label> <input type="checkbox" name="checkboxes" id="h1" value="1">
-        <label for="h2">11:00h - 12:00h</label><input type="checkbox" name="checkboxes" id="h2" value="2">
-        <label for="h3">12:00h - 13:00h</label><input type="checkbox" name="checkboxes" id="h3" value="3">
-        <label for="h4">13:00h - 14:00h</label><input type="checkbox" name="checkboxes" id="h4" value="4">
-        <label for="h5">16:00h - 17:00h</label><input type="checkbox" name="checkboxes" id="h5" value="5">   
-    <input type="button" value="Actualizar reserva a partir de id" id="ActualizarRes"/> <br> <br>
+    <div class="operacion">
+        <h3>Ver las reservas del sistema: </h3>
+        <input type="button" value="Ver todas las reservas" id="VerTodasRes" class="button"/> <br> <br>
+    </div>
+    <div class="operacion">
+        <h3>Eliminar las reservas del sistema: </h3>
+        <input type="button" value="Eliminar todas las reservas" id="EliminarTodasRes" class="button"/> <br> <br>
+    </div>
+    <div class="operacion">
+        <h3>Ver reserva especifica a partir de su id:</h3>
+        <p class="InfoExtra">Inserte el id de la reserva que desea consultar:</p>
+        <input type="text" id="ReservaId" autocomplete="off" class="data"/>
+        <input type="button" value="Ver reserva a partir de id" id="VerRes" class="button"/> <br> <br>
+    </div>
+    <div class="operacion">
+        <h3>Eliminar reserva especifica a partir de su id: </h3>
+        <p class="InfoExtra">Inserte el id de la reserva que desea eliminar:</p>
+        <input type="text" id="ReservaIdEliminar" autocomplete="off" class="data"/>
+        <input type="button" value="Eliminar reserva a partir de id" id="EliminarRes" class="button"/> <br> <br>
+    </div>
+    <div class="operacion">
+        <h3>Actualizar reserva especifica a partir de su id: </h3>
+        <p class="InfoExtra">Inserte los datos que desea modificar de la reserva:</p>
+        <div class="datos">
+            Id: <input type="text" id="ReservaIdActualizar" autocomplete="off"/>
+            Nombre: <input type="text" id="ReservaNombreModificar" autocomplete="off"/>
+            Apellidos: <input type="text" id="ReservaApellidosModificar" autocomplete="off"/>
+            Correo: <input type="text" id="ReservaEmailModificar" autocomplete="off"/>
+            telefono: <input type="text" id="ReservaTelefonoModificar" autocomplete="off"/>
+            Fecha: <input type="text" name="fecha" id="fecha" autocomplete="off" required> <br>
+            Numero de personas: <input type="number" id="ReservaNumPersonasModificar" autocomplete="off"/> 
+            Sala: <select id="ReservaSalaModificar" name="sala">
+                <option value="SalaDeEstudiosGeneralSerrano">Sala de estudios General Serrano</option>
+                <option value="SalaDeEstudiosMaríaLeón">Sala de estudios María León</option>
+                <option value="SalaDeMeetingPoint">Sala de MeetingPoint</option>
+            </select><br>
+            Horas:<label for="h1">10:00h - 11:00h</label> <input type="checkbox" name="checkboxes" id="h1" value="1">
+                <label for="h2">11:00h - 12:00h</label><input type="checkbox" name="checkboxes" id="h2" value="2">
+                <label for="h3">12:00h - 13:00h</label><input type="checkbox" name="checkboxes" id="h3" value="3">
+                <label for="h4">13:00h - 14:00h</label><input type="checkbox" name="checkboxes" id="h4" value="4">
+                <label for="h5">16:00h - 17:00h</label><input type="checkbox" name="checkboxes" id="h5" value="5">   
+            <input type="button" value="Actualizar reserva a partir de id" id="ActualizarRes"/> <br> <br>
+        </div>
+    </div>
 
     <div id="Resultado"></div>
 </body>

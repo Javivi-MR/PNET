@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     let AlmacenarRes = document.getElementById("enviar");
     AlmacenarRes.addEventListener("click", function() {
-        if(DatosValidos())
+        if(DatosValidos())  //Si los datos son validos
         {
             let Reserva = {};
 
