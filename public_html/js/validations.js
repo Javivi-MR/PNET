@@ -18,6 +18,7 @@ function getAllReservas() {
             {
                 $("#Resultado").append("<p>----Reserva: " + (i+1) + "----</p>");
                 item = data[i];
+                $("#Resultado").append("<p>Id: " + item._id + "</p>");
                 $("#Resultado").append("<p>Nombre: " + item.Nombre + "</p>");
                 $("#Resultado").append("<p>Apellidos: " + item.Apellidos + "</p>");
                 $("#Resultado").append("<p>Telefono: " + item.Telefono + "</p>");

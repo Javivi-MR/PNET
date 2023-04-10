@@ -35,23 +35,27 @@ document.addEventListener("DOMContentLoaded", function() {
             console.log(checks);
             for(let i = 0; i < checks.length; i++)
             {
-                switch(checks[i].value)
+                if(checks[i].checked)
                 {
-                    case "1":
-                        horas.push("10:00h - 11:00h");
-                        break;
-                    case "2":
-                        horas.push("11:00h - 12:00h");
-                        break;
-                    case "3":
-                        horas.push("12:00h - 13:00h");
-                        break;
-                    case "4":
-                        horas.push("13:00h - 14:00h");
-                        break;
-                    case "5":
-                        horas.push("14:00h - 15:00h");
-                        break;
+                    console.log(checks[i].value);
+                    switch(checks[i].value)
+                    {
+                        case "1":
+                            horas.push("10:00h - 11:00h");
+                            break;
+                        case "2":
+                            horas.push("11:00h - 12:00h");
+                            break;
+                        case "3":
+                            horas.push("12:00h - 13:00h");
+                            break;
+                        case "4":
+                            horas.push("13:00h - 14:00h");
+                            break;
+                        case "5":
+                            horas.push("14:00h - 15:00h");
+                            break;
+                    }
                 }
             }
             if(horas.length != 0)
