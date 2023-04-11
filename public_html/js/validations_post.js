@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             horas.push("13:00h - 14:00h");
                             break;
                         case "5":
-                            horas.push("14:00h - 15:00h");
+                            horas.push("16:00h - 17:00h");
                             break;
                     }
                 }

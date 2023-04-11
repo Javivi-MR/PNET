@@ -53,7 +53,9 @@ function deleteAllReservas() {
         contentType: "application/json",
         dataType : "text",
         success: function(data) {
-            $("#Resultado").html(data);
+            let rawdata = JSON.parse(data);
+            console.log(rawdata.msg);
+            $("#Resultado").html(rawdata.msg);
         },
         error: function(res) {
             alert("ERROR: " + res.statusText);
@@ -77,7 +79,19 @@ function getReservas(ReservaId) {
         dataType: "json",
         url: myUrl,
         success: function(data) {
-	    $("#Resultado").html(JSON.stringify(data[0]));
+            let item = [];
+            $("#Resultado").append("<p>----Reserva----</p>");
+            item = data[0];
+            $("#Resultado").append("<p>Id: " + item._id + "</p>");
+            $("#Resultado").append("<p>Nombre: " + item.Nombre + "</p>");
+            $("#Resultado").append("<p>Apellidos: " + item.Apellidos + "</p>");
+            $("#Resultado").append("<p>Telefono: " + item.Telefono + "</p>");
+            $("#Resultado").append("<p>Correo: " + item.Correo + "</p>");
+            $("#Resultado").append("<p>Fecha: " + item.Fecha + "</p>");
+            $("#Resultado").append("<p>Numero de personas: " + item.NumPersonas + "</p>");
+            $("#Resultado").append("<p>Sala: " + item.Sala + "</p>");
+            $("#Resultado").append("<p>Horas: " + item.Horas + "</p>");
+            $("#Resultado").append("<p>--------------------</p>");
         },
         error: function(res) {
             let mensaje = JSON.parse(res.responseText);
@@ -183,7 +197,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     horas.push("13:00h - 14:00h");
                     break;
                 case "5":
-                    horas.push("14:00h - 15:00h");
+                    horas.push("16:00h - 17:00h");
                     break;
             }
         }
