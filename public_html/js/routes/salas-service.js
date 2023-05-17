@@ -5,14 +5,14 @@ let ObjectId = require('mongodb').ObjectId;
 const Salas = function () {
 };
 Salas.prototype.connectDb = function (callback) {
-    MongoClient.connect("mongodb+srv://Test_PNET:PNET_2022_2023_Pedro@fjmr-pnet-2022-2023.ndwi6hs.mongodb.net/?retryWrites=true&w=majority",
+    MongoClient.connect("/*UrlToTheDB*/?retryWrites=true&w=majority",
     {useNewUrlParser: true, useUnifiedTopology: true},
     function (err, database) {
         if (err) {
             console.log(err);
             callback(err);
         }
-        db=database.db('fjmr-pnet-2022-2023').collection('salas');
+        db=database.db('/*NameOfTheBD*/').collection('salas');
         console.log("Conexión correcta");
         callback(err, database);
     });
